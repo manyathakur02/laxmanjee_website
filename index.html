@@ -1395,9 +1395,8 @@
         img.src = `${PRIMARY_THEME_FOLDER}/ezgif-frame-${himachalStr}.jpg`;
 
         img.onerror = function() {
-          const fallbackNum = Math.floor((idx * 239) / (TOTAL_FRAMES - 1)) + 1;
-          const fallbackStr = String(fallbackNum).padStart(3, '0');
-          img.src = `${FALLBACK_THEME_FOLDER}/ezgif-frame-${fallbackStr}.jpg`;
+        img.onerror = null;
+        hideHeroLoader();
         };
 
         img.onload = function() {
