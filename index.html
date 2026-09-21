@@ -256,11 +256,7 @@
 
         <!-- BACKGROUND 360° ROTATING CANVAS (FULL SCREEN WITH EDITORIAL TINT) -->
         <div class="absolute inset-0 z-0 w-full h-full flex items-center justify-center pointer-events-auto overflow-hidden">
-          <!-- Loading Skeleton Overlay (Hides automatically on frame load) -->
-          <div id="heroLoader" class="absolute inset-0 z-20 bg-ivory dark:bg-darkbg flex flex-col items-center justify-center gap-4 transition-opacity duration-700 pointer-events-none">
-            <div class="w-12 h-12 rounded-full border-2 border-gold border-t-maroon animate-spin"></div>
-            <span class="text-xs font-mono tracking-widest text-maroon dark:text-gold uppercase font-bold">Loading Kandaghat Heritage Story...</span>
-          </div>
+         
 
           <!-- Drag to Rotate Affordance Hint Box -->
           <div id="dragHint" class="absolute bottom-8 z-20 pointer-events-none bg-paper/95 dark:bg-darkcard/95 backdrop-blur-md px-4 py-2 rounded-xl border border-gold/40 shadow-lg text-xs font-mono text-espresso dark:text-ivory flex items-center gap-2 transition-all duration-500 animate-bounce">
@@ -272,10 +268,10 @@
           <!-- Soft Background Radial Tint Layer for High Contrast Text Legibility -->
           <div class="absolute inset-0 bg-ivory/70 dark:bg-darkbg/75 z-10 pointer-events-none backdrop-blur-[1px]"></div>
 
-          <!-- HTML5 CANVAS FOR 360-FRAME SCRUBBING -->
-          <canvas id="sequenceCanvas" 
-                  class="absolute inset-0 z-0 w-full h-full object-cover cursor-grab active:cursor-grabbing touch-none select-none opacity-85">
-          </canvas>
+          <!-- BACKGROUND VIDEO -->
+          <video autoplay loop muted playsinline class="absolute inset-0 z-0 w-full h-full object-cover opacity-85">
+              <source src="animation.mp4" type="video/mp4">
+          </video>
         </div>
 
         <!-- FOREGROUND NARRATIVE OVERLAY (CENTERED EDITORIAL TYPOGRAPHY WITH ACCESSIBILITY) -->
@@ -1310,27 +1306,9 @@
 
 
   <!-- SCRIPTS & INTERACTION LOGIC -->
+  <!-- SCRIPTS & INTERACTION LOGIC -->
   <script>
     (function() {
-      // 360 Sequence Config (60 high-performance GPU-decoded frames mapped to 60Hz display refresh rate)
-      const TOTAL_FRAMES = 60;
-      const frameImages = [];
-      const frameBitmaps = [];
-      let currentFrameIndex = 0;
-      let targetFrameIndex = 0;
-      let isManualDragging = false;
-      let dragStartX = 0;
-      let dragStartFrame = 0;
-      let animFrameRequested = false;
-
-      const canvas = document.getElementById('sequenceCanvas');
-      const ctx = canvas ? canvas.getContext('2d') : null;
-
-      if (ctx) {
-        ctx.imageSmoothingEnabled = true;
-        ctx.imageSmoothingQuality = 'medium';
-      }
-
       const chapter1 = document.getElementById('chapter1');
       const chapter2 = document.getElementById('chapter2');
       const chapter3 = document.getElementById('chapter3');
@@ -1356,7 +1334,6 @@
           const isDark = document.documentElement.classList.contains('dark');
           localStorage.setItem('theme', isDark ? 'dark' : 'light');
           if (themeIcon) themeIcon.innerText = isDark ? '☀️' : '🌙';
-          drawFrame(currentFrameIndex);
         });
       }
 
@@ -1369,161 +1346,8 @@
         });
       }
 
-      // Preloader with GPU ImageBitmap pre-decoding
-      function preloadSequence() {
-        for (let i = 0; i < 10; i++) {
-          loadSingleFrame(i);
-        }
-        if ('requestIdleCallback' in window) {
-          requestIdleCallback(() => loadRemainingFrames(10));
-        } else {
-          setTimeout(() => loadRemainingFrames(10), 50);
-        }
-      }
-
-      const PRIMARY_THEME_FOLDER = 'background_images';
-      const FALLBACK_THEME_FOLDER = 'background_images';
-      const HIMACHAL_TOTAL_FRAMES = 120;
-
-      function loadSingleFrame(idx) {
-        if (frameImages[idx]) return;
-
-        const himachalFrameNum = Math.floor((idx * (HIMACHAL_TOTAL_FRAMES - 1)) / (TOTAL_FRAMES - 1)) + 1;
-        const himachalStr = String(himachalFrameNum).padStart(3, '0');
-
-        const img = new Image();
-        img.src = `${PRIMARY_THEME_FOLDER}/ezgif-frame-${himachalStr}.jpg`;
-
-        img.onerror = function() {
-        img.onerror = null;
-        hideHeroLoader();
-        };
-
-        img.onload = function() {
-          frameImages[idx] = img;
-
-          // GPU Pre-decode via createImageBitmap for zero-latency 60fps canvas drawing
-          if ('createImageBitmap' in window) {
-            createImageBitmap(img).then(bitmap => {
-              frameBitmaps[idx] = bitmap;
-              if (idx === 0) {
-                drawFrame(0);
-                hideHeroLoader();
-              }
-              if (currentFrameIndex === idx) drawFrame(currentFrameIndex);
-            }).catch(() => {
-              if (idx === 0) {
-                drawFrame(0);
-                hideHeroLoader();
-              }
-            });
-          } else {
-            if (idx === 0) {
-              drawFrame(0);
-              hideHeroLoader();
-            }
-            if (currentFrameIndex === idx) drawFrame(currentFrameIndex);
-          }
-        };
-      }
-
-      function hideHeroLoader() {
-        const heroLoader = document.getElementById('heroLoader');
-        if (heroLoader && heroLoader.style.opacity !== '0') {
-          heroLoader.style.opacity = '0';
-          setTimeout(() => heroLoader.style.display = 'none', 500);
-        }
-      }
-
-      function loadRemainingFrames(startIdx) {
-        for (let i = startIdx; i < TOTAL_FRAMES; i++) {
-          (function(index) {
-            setTimeout(() => {
-              loadSingleFrame(index);
-            }, (index - startIdx) * 10);
-          })(i);
-        }
-      }
-
-      function getDrawable(targetIdx) {
-        if (frameBitmaps[targetIdx]) return frameBitmaps[targetIdx];
-        if (frameImages[targetIdx] && frameImages[targetIdx].complete) return frameImages[targetIdx];
-
-        for (let offset = 1; offset < TOTAL_FRAMES; offset++) {
-          const left = targetIdx - offset;
-          const right = targetIdx + offset;
-          if (left >= 0 && frameBitmaps[left]) return frameBitmaps[left];
-          if (right < TOTAL_FRAMES && frameBitmaps[right]) return frameBitmaps[right];
-          if (left >= 0 && frameImages[left] && frameImages[left].complete) return frameImages[left];
-          if (right < TOTAL_FRAMES && frameImages[right] && frameImages[right].complete) return frameImages[right];
-        }
-        return frameBitmaps[0] || frameImages[0];
-      }
-
-      function resizeCanvas() {
-        if (!canvas) return;
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-        drawFrame(currentFrameIndex);
-      }
-      window.addEventListener('resize', resizeCanvas);
-
-      // Ultra-fast Canvas Frame Drawing
-      function drawFrame(idx) {
-        currentFrameIndex = Math.max(0, Math.min(TOTAL_FRAMES - 1, idx));
-        const item = getDrawable(currentFrameIndex);
-
-        if (!canvas || !ctx) return;
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-        const isDark = document.documentElement.classList.contains('dark');
-        ctx.fillStyle = isDark ? '#140508' : '#FBF3E7';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-        if (item) {
-          const itemWidth = item.width || 1280;
-          const itemHeight = item.height || 720;
-
-          const hRatio = canvas.width / itemWidth;
-          const vRatio = canvas.height / itemHeight;
-          const ratio = Math.max(hRatio, vRatio);
-
-          const centerShiftX = (canvas.width - itemWidth * ratio) / 2;
-          const centerShiftY = (canvas.height - itemHeight * ratio) / 2;
-
-          ctx.drawImage(
-            item,
-            0, 0, itemWidth, itemHeight,
-            centerShiftX, centerShiftY, itemWidth * ratio, itemHeight * ratio
-          );
-        }
-      }
-
-      // Decoupled requestAnimationFrame canvas renderer (Zero Jitter)
-      function requestCanvasRender(idx) {
-        targetFrameIndex = idx;
-        if (!animFrameRequested) {
-          animFrameRequested = true;
-          requestAnimationFrame(() => {
-            drawFrame(targetFrameIndex);
-            animFrameRequested = false;
-          });
-        }
-      }
-
-      function hideDragHint() {
-        const dragHint = document.getElementById('dragHint');
-        if (dragHint && dragHint.style.opacity !== '0') {
-          dragHint.style.opacity = '0';
-          setTimeout(() => dragHint.style.display = 'none', 400);
-        }
-      }
-
-      // Smooth Scroll Handler
+      // Smooth Scroll Handler (Maintains text chapter fading over the video)
       function onScroll() {
-        if (isManualDragging) return;
-        hideDragHint();
-
         const sequenceSection = document.getElementById('hero-sequence');
         if (!sequenceSection) return;
 
@@ -1534,9 +1358,6 @@
 
         const currentScroll = Math.max(0, -rect.top);
         const p = Math.min(1.0, Math.max(0.0, currentScroll / totalScrollable));
-
-        const frameToDraw = Math.min(TOTAL_FRAMES - 1, Math.floor(p * TOTAL_FRAMES));
-        requestCanvasRender(frameToDraw);
 
         updateChapterOverlays(p);
       }
@@ -1584,40 +1405,6 @@
         const targetY = sequenceSection.offsetTop + (targetRatio * totalScrollable);
         window.scrollTo({ top: targetY, behavior: 'smooth' });
       };
-
-      // Pointer Drag to Rotate
-      function onPointerDown(e) {
-        isManualDragging = true;
-        hideDragHint();
-        dragStartX = e.clientX || (e.touches && e.touches[0].clientX);
-        dragStartFrame = currentFrameIndex;
-      }
-
-      function onPointerMove(e) {
-        if (!isManualDragging) return;
-        const clientX = e.clientX || (e.touches && e.touches[0].clientX);
-        const deltaX = clientX - dragStartX;
-
-        const frameShift = Math.round(deltaX * 0.4);
-        let newFrame = (dragStartFrame + frameShift) % TOTAL_FRAMES;
-        if (newFrame < 0) newFrame += TOTAL_FRAMES;
-
-        requestCanvasRender(newFrame);
-      }
-
-      function onPointerUp() {
-        isManualDragging = false;
-      }
-
-      if (canvas) {
-        canvas.addEventListener('mousedown', onPointerDown);
-        window.addEventListener('mousemove', onPointerMove);
-        window.addEventListener('mouseup', onPointerUp);
-
-        canvas.addEventListener('touchstart', onPointerDown, { passive: true });
-        window.addEventListener('touchmove', onPointerMove, { passive: true });
-        window.addEventListener('touchend', onPointerUp);
-      }
 
       // -------------------------------------------------------------
       // CAROUSEL SLIDER ENGINE (FOR REAL PRODUCT PHOTOS)
@@ -1731,10 +1518,8 @@
         });
       });
 
-      // Ultra-responsive native scroll initialization
+      // Initialization
       window.addEventListener('DOMContentLoaded', () => {
-        preloadSequence();
-        resizeCanvas();
         window.addEventListener('scroll', onScroll, { passive: true });
         onScroll();
         updateCarousel();
