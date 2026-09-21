@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laxmanjee Sweets — Sirhind Franchise Outlet | Kandaghat Heritage Sweets (Estd. 1978)</title>
+  <meta name="description" content="Official Laxmanjee Sweets Sirhind Franchise Outlet. 100% prepared in the Kandaghat mother kitchen (Himachal Pradesh, Estd. 1978) and shipped fresh daily down the highway. Reserve your daily stock via WhatsApp (+91 9056900448).">
+  <meta name="theme-color" content="#FBF3E7">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Work+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            ivory: '#FBF3E7',
+            paper: '#FFFCF7',
+            maroon: {
+              DEFAULT: '#801A27',
+              dark: '#3E0B14',
+              light: '#A32637',
+              soft: '#F4E8EA'
+            },
+            gold: {
+              DEFAULT: '#C9932E',
+              foil: '#E4C578',
+              dark: '#9A6B1A',
+              light: '#FAF3E0'
+            },
+            espresso: {
+              DEFAULT: '#2E1B12',
+              soft: '#5A4335',
+              muted: '#8C7365'
+            },
+            pine: {
+              DEFAULT: '#2D4C3A',
+              light: '#E8F0EB'
+            },
+            darkbg: '#140508',
+            darkcard: '#22080D',
+            darkborder: 'rgba(228, 197, 120, 0.18)'
+          },
+          fontFamily: {
+            serif: ['Fraunces', 'Georgia', 'serif'],
+            sans: ['Poppins', 'Work Sans', 'system-ui', 'sans-serif']
+          },
+          boxShadow: {
+            'heritage': '0 24px 48px -12px rgba(46, 27, 18, 0.12), 0 0 1px 1px rgba(46, 27, 18, 0.06)',
+            'apple-glow': '0 0 45px rgba(201, 147, 46, 0.3)',
+            'maroon-lift': '0 14px 32px -6px rgba(128, 26, 39, 0.4)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --bg-ivory: #FBF3E7;
+      --color-maroon: #801A27;
+      --color-gold: #C9932E;
+      --color-espresso: #2E1B12;
+      --border-hairline: rgba(46, 27, 18, 0.12);
+    }
+
+    .dark {
+      --bg-ivory: #140508;
+      --color-maroon: #E4C578;
+      --color-gold: #E4C578;
+      --color-espresso: #FBF3E7;
+      --border-hairline: rgba(228, 197, 120, 0.18);
+    }
+
+    body {
+      background-color: var(--bg-ivory);
+      color: var(--color-espresso);
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      transition: background-color 0.4s ease, color 0.4s ease;
+    }
+
+    .glass-header {
+      background: rgba(251, 243, 231, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-hairline);
+    }
+    .dark .glass-header {
+      background: rgba(20, 5, 8, 0.92);
+      border-bottom: 1px solid var(--border-hairline);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--bg-ivory);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #C9932E;
+      border-radius: 4px;
+    }
+
+    /* Pulse animation for WhatsApp CTA */
+    @keyframes waPulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+      70% { box-shadow: 0 0 0 18px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+    .wa-pulse {
+      animation: waPulse 2.2s infinite;
+    }
+
+    /* Floating Garnish Animation */
+    @keyframes floatParticle {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-12px) rotate(8deg); }
+    }
+    .floating-garnish {
+      animation: floatParticle 5s ease-in-out infinite;
+    }
+
+    /* Chapter transition */
+    .chapter-overlay {
+      transition: opacity 0.4s ease, transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+    .chapter-hidden {
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(20px) scale(0.98);
+      position: absolute;
+      inset: 0;
+    }
+    .chapter-visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0) scale(1);
+      position: relative;
+    }
+
+    /* Carousel Slider Animation */
+    .carousel-slide {
+      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+  </style>
+</head>
+<body class="selection:bg-maroon selection:text-ivory">
+
+  <!-- TOP HEADER / STICKY NAVBAR (MATCHING REFERENCE 1 & REFERENCE 2) -->
+  <header id="mainHeader" class="fixed top-0 left-0 right-0 z-50 glass-header transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Left Brand Badge with Real Logo Image (logo.jpeg) -->
+      <a href="#hero-sequence" class="flex items-center gap-3.5 group">
+        <div class="w-11 h-11 rounded-xl overflow-hidden border border-gold/40 shadow-md group-hover:scale-105 transition-transform duration-300 bg-maroon flex items-center justify-center shrink-0">
+          <img src="logo.jpeg" alt="Laxmanjee Sweets Logo" class="w-full h-full object-cover">
+        </div>
+        <div class="flex flex-col">
+          <div class="flex items-center gap-2">
+            <span class="font-serif font-bold text-lg sm:text-xl tracking-tight text-espresso dark:text-ivory leading-none group-hover:text-maroon dark:group-hover:text-gold transition-colors">
+              Laxmanjee Sweets
+            </span>
+            <span class="text-[10px] font-mono font-bold uppercase tracking-widest text-maroon dark:text-gold border-l border-gold/40 pl-2.5 ml-1">ESTD. 1978</span>
+          </div>
+          <span class="text-[11px] uppercase tracking-widest text-espresso-muted dark:text-gold-foil/80 font-semibold mt-1 flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-sm bg-pine inline-block"></span>
+            SIRHIND FRANCHISE OUTLET
+          </span>
+        </div>
+      </a>
+
+      <!-- Center Navigation Links -->
+      <nav class="hidden md:flex items-center gap-6 text-xs sm:text-sm font-medium text-espresso-soft dark:text-ivory/80">
+        <a href="#hero-sequence" onclick="scrollToChapter(0)" class="hover:text-maroon dark:hover:text-gold transition-colors py-1">Kandaghat Heritage</a>
+        <a href="#transit-chapter" class="hover:text-maroon dark:hover:text-gold transition-colors py-1">Highway Transit</a>
+        <a href="#menu-carousel" class="hover:text-maroon dark:hover:text-gold transition-colors py-1">Featured Gallery</a>
+        <a href="#catalog-section" class="hover:text-maroon dark:hover:text-gold transition-colors py-1">Full Catalog Grid</a>
+        <a href="#trust-section" class="hover:text-maroon dark:hover:text-gold transition-colors py-1">Trust & Reviews</a>
+        <a href="#faq-section" class="hover:text-maroon dark:hover:text-gold transition-colors py-1">FAQ</a>
+        <a href="#location-section" class="hover:text-maroon dark:hover:text-gold transition-colors py-1">Sirhind Counter</a>
+      </nav>
+
+      <!-- Right Controls, Social & WhatsApp CTA -->
+      <div class="flex items-center gap-3">
+
+        <!-- Social Media Quick Links -->
+        <div class="hidden xl:flex items-center gap-2 border-r border-espresso/15 dark:border-gold/20 pr-3 mr-1">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Laxmanjee Instagram" class="text-espresso/70 dark:text-gold/70 hover:text-maroon dark:hover:text-gold transition-colors text-sm font-semibold p-1">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Laxmanjee Facebook" class="text-espresso/70 dark:text-gold/70 hover:text-maroon dark:hover:text-gold transition-colors text-sm font-semibold p-1">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.592 0 9 1.583 9 4.615V8z"/></svg>
+          </a>
+        </div>
+
+        <!-- Theme Switcher Button -->
+        <button id="themeToggleBtn" 
+                aria-label="Toggle Theme"
+                class="w-10 h-10 rounded-xl bg-paper dark:bg-darkcard border border-espresso/10 dark:border-gold/30 text-espresso dark:text-gold flex items-center justify-center hover:scale-105 transition-all duration-200 shadow-sm">
+          <span id="themeIcon">🌙</span>
+        </button>
+
+        <!-- WhatsApp CTA Button -->
+        <a href="https://wa.me/919056900448?text=Hello%20Laxmanjee%20Sirhind!%20I%20want%20to%20inquire%20about%20today%27s%20fresh%20stock%20dispatched%20from%20the%20Kandaghat%20mother%20kitchen." 
+           target="_blank" 
+           rel="noopener noreferrer"
+           id="navWhatsappCta"
+           class="inline-flex items-center gap-2.5 bg-maroon hover:bg-maroon-dark text-ivory px-5 sm:px-6 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-300 shadow-sm hover:-translate-y-0.5 border border-gold/30">
+          <svg class="w-4 h-4 fill-current text-green-400" viewBox="0 0 24 24">
+            <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.964 9.964 0 001.333 4.993L2 22l5.233-1.237a9.982 9.982 0 004.779 1.221h.004c5.505 0 9.988-4.478 9.989-9.985 0-2.668-1.038-5.176-2.925-7.063C17.194 3.05 14.68 2 12.012 2zm5.835 14.168c-.252.709-1.464 1.35-2.02 1.411-.512.057-1.164.084-3.606-.921-2.981-1.226-4.9-4.25-5.048-4.45-.148-.198-1.213-1.615-1.213-3.08 0-1.464.764-2.185 1.037-2.482.274-.296.598-.37.797-.37.199 0 .399.002.573.01.185.008.435-.07.68.518.252.607.86 2.096.935 2.247.075.15.124.325.025.523-.099.198-.149.322-.298.497-.149.175-.313.391-.447.525-.149.149-.304.312-.131.609.173.297.771 1.272 1.654 2.059 1.135 1.012 2.094 1.326 2.392 1.474.298.149.472.124.646-.075.174-.199.746-.87 0.945-1.168.199-.297.398-.248.672-.149.274.099 1.741.82 2.04 0.969.298.149.497.223.572.348.075.124.075.722-.177 1.431z"/>
+          </svg>
+          <span>Message on WhatsApp</span>
+        </a>
+
+        <!-- Mobile Menu Trigger -->
+        <button id="mobileMenuBtn" aria-label="Toggle Navigation Menu" class="md:hidden p-2.5 rounded-lg text-espresso dark:text-ivory hover:bg-paper dark:hover:bg-darkcard border border-espresso/10 dark:border-gold/20">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Thin Editorial Hairline Divider (Matching BUNKR reference 2) -->
+    <div class="w-full h-[1px] bg-espresso/10 dark:bg-gold/20"></div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobileMenu" class="hidden md:hidden bg-paper dark:bg-darkcard border-b border-espresso/10 dark:border-gold/20 px-6 py-4 space-y-3 text-sm font-medium text-espresso dark:text-ivory">
+      <a href="#hero-sequence" onclick="scrollToChapter(0)" class="block py-2 hover:text-maroon dark:hover:text-gold">Kandaghat Heritage</a>
+      <a href="#hero-sequence" onclick="scrollToChapter(0.3)" class="block py-2 hover:text-maroon dark:hover:text-gold">Pure Desi Ghee</a>
+      <a href="#transit-chapter" class="block py-2 hover:text-maroon dark:hover:text-gold">Highway Transit</a>
+      <a href="#menu-carousel" class="block py-2 hover:text-maroon dark:hover:text-gold">Products Gallery</a>
+      <a href="#location-section" class="block py-2 hover:text-maroon dark:hover:text-gold">Sirhind Counter</a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT AREA -->
+  <main class="relative">
+
+    <!-- STICKY 160VH CANVAS STORYTELLING SECTION -->
+    <section id="hero-sequence" class="relative w-full h-[160vh]">
+
+      <!-- Sticky Viewport Container -->
+      <div id="stickyContainer" class="sticky top-0 left-0 w-full h-screen overflow-hidden flex items-center justify-center bg-ivory dark:bg-darkbg transition-colors duration-500">
+
+        <!-- BACKGROUND 360° ROTATING CANVAS (FULL SCREEN WITH EDITORIAL TINT) -->
+        <div class="absolute inset-0 z-0 w-full h-full flex items-center justify-center pointer-events-auto overflow-hidden">
+          <!-- Loading Skeleton Overlay (Hides automatically on frame load) -->
+          <div id="heroLoader" class="absolute inset-0 z-20 bg-ivory dark:bg-darkbg flex flex-col items-center justify-center gap-4 transition-opacity duration-700 pointer-events-none">
+            <div class="w-12 h-12 rounded-full border-2 border-gold border-t-maroon animate-spin"></div>
+            <span class="text-xs font-mono tracking-widest text-maroon dark:text-gold uppercase font-bold">Loading Kandaghat Heritage Story...</span>
+          </div>
+
+          <!-- Drag to Rotate Affordance Hint Box -->
+          <div id="dragHint" class="absolute bottom-8 z-20 pointer-events-none bg-paper/95 dark:bg-darkcard/95 backdrop-blur-md px-4 py-2 rounded-xl border border-gold/40 shadow-lg text-xs font-mono text-espresso dark:text-ivory flex items-center gap-2 transition-all duration-500 animate-bounce">
+            <span class="text-maroon dark:text-gold font-bold">‹ 🖐️</span>
+            <span>Drag canvas to rotate 360° or scroll to scrub story</span>
+            <span class="text-maroon dark:text-gold font-bold">›</span>
+          </div>
+
+          <!-- Soft Background Radial Tint Layer for High Contrast Text Legibility -->
+          <div class="absolute inset-0 bg-ivory/70 dark:bg-darkbg/75 z-10 pointer-events-none backdrop-blur-[1px]"></div>
+
+          <!-- HTML5 CANVAS FOR 360-FRAME SCRUBBING -->
+          <canvas id="sequenceCanvas" 
+                  class="absolute inset-0 z-0 w-full h-full object-cover cursor-grab active:cursor-grabbing touch-none select-none opacity-85">
+          </canvas>
+        </div>
+
+        <!-- FOREGROUND NARRATIVE OVERLAY (CENTERED EDITORIAL TYPOGRAPHY WITH ACCESSIBILITY) -->
+        <div class="relative z-10 max-w-4xl mx-auto w-full px-6 sm:px-12 py-12 flex flex-col items-center justify-center text-center min-h-[440px]" aria-live="polite">
+
+          <!-- Accessible Skip Story CTA Link -->
+          <a href="#menu-carousel" class="absolute top-4 right-6 text-xs font-mono font-bold uppercase tracking-wider text-maroon dark:text-gold bg-paper/90 dark:bg-darkcard/90 backdrop-blur px-3.5 py-1.5 rounded-lg border border-gold/40 shadow-sm hover:border-maroon transition-all">
+            Skip Story ↓
+          </a>
+
+          <!-- CHAPTER 1: KANDAGHAT HERITAGE (0% - 22% Scroll) -->
+          <div id="chapter1" class="chapter-overlay chapter-visible max-w-3xl flex flex-col items-center text-center">
+            <div class="text-xs sm:text-sm font-mono tracking-[0.25em] text-maroon dark:text-gold uppercase mb-4 flex items-center justify-center gap-3">
+              <span>ESTD. 1978</span>
+              <span class="text-gold font-serif">✦</span>
+              <span>KANDAGHAT HERITAGE</span>
+              <span class="text-gold font-serif">✦</span>
+              <span>SOLAN, HP</span>
+            </div>
+            <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-espresso dark:text-ivory leading-[1.08] mb-6">
+              The Iconic Taste of Kandaghat. <br><span class="text-maroon dark:text-gold italic font-normal">Now in Sirhind.</span>
+            </h1>
+            <p class="text-sm sm:text-base md:text-lg font-normal text-espresso/90 dark:text-ivory/90 leading-relaxed max-w-2xl mx-auto mb-6">
+              Established in 1978 at 4,600 feet in the hills of Himachal Pradesh, Laxmanjee Sweets is famous for handcrafted Besan Burfee made without artificial additives. Prepared 100% fresh daily at our mother kitchen and shipped directly down the highway for counter pickup in Sirhind.
+            </p>
+            <div class="text-xs font-mono uppercase tracking-widest text-pine dark:text-emerald-400 border-l-2 border-pine dark:border-emerald-400 pl-4 py-1 font-semibold text-left">
+              100% Prepared at Kandaghat · Zero Local Cooking
+            </div>
+          </div>
+
+          <!-- CHAPTER 2: PURITY & TRADITIONAL RECIPE (22% - 52% Scroll) -->
+          <div id="chapter2" class="chapter-overlay chapter-hidden max-w-3xl flex flex-col items-center text-center">
+            <div class="text-xs sm:text-sm font-mono tracking-[0.25em] text-maroon dark:text-gold uppercase mb-4 flex items-center justify-center gap-3">
+              <span>ARTISANAL CRAFTSMANSHIP</span>
+              <span class="text-gold font-serif">✦</span>
+              <span>100% PURE GHEE</span>
+            </div>
+            <h2 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-espresso dark:text-ivory leading-[1.08] mb-6">
+              Pure Desi Ghee. <br><span class="text-maroon dark:text-gold italic font-normal">No Shortcuts.</span>
+            </h2>
+            <p class="text-sm sm:text-base md:text-lg font-normal text-espresso/90 dark:text-ivory/90 leading-relaxed max-w-2xl mx-auto mb-6">
+              Gram flour is slow-roasted in traditional brass copper pans using pure churned Desi Ghee and regional dairy. Every tray is set into rich, melt-in-your-mouth squares and garnished with hand-chopped pistachios.
+            </p>
+            <div class="flex flex-wrap justify-center gap-3 text-xs font-mono uppercase tracking-wider text-espresso dark:text-ivory border-l-2 border-gold pl-4 py-1">
+              <span>PURE DESI GHEE</span> · <span>ORGANIC HILL JAGGERY</span> · <span>NO PRESERVATIVES</span> · <span>ORIGINAL 1978 RECIPE</span>
+            </div>
+          </div>
+
+          <!-- CHAPTER 3: HIGHWAY TRANSIT TO SIRHIND (52% - 78% Scroll) -->
+          <div id="chapter3" class="chapter-overlay chapter-hidden max-w-3xl flex flex-col items-center text-center">
+            <div class="text-xs sm:text-sm font-mono tracking-[0.25em] text-pine dark:text-emerald-400 uppercase mb-4 flex items-center justify-center gap-3">
+              <span>SOLAN → SIRHIND</span>
+              <span class="text-emerald-400 font-serif">✦</span>
+              <span>DAILY HIGHWAY EXPRESS</span>
+            </div>
+            <h2 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-espresso dark:text-ivory leading-[1.08] mb-6">
+              Hill Fresh Shipments, <br><span class="text-maroon dark:text-gold italic font-normal">Dispatched Daily.</span>
+            </h2>
+            <p class="text-sm sm:text-base md:text-lg font-normal text-espresso/90 dark:text-ivory/90 leading-relaxed max-w-2xl mx-auto mb-6">
+              Batches are prepared fresh before sunrise at Kandaghat, vacuum-sealed for mountain-fresh transit, and delivered straight down the Solan-Sirhind highway for daily counter pickup.
+            </p>
+            <div class="text-xs font-mono uppercase tracking-widest text-maroon dark:text-gold border-l-2 border-maroon dark:border-gold pl-4 py-1">
+              Morning Batching · Sealed Highway Transit · Cinema Road Counter Intake
+            </div>
+          </div>
+
+          <!-- CHAPTER 4: SIRHIND COUNTER & RESERVATIONS (78% - 100% Scroll) -->
+          <div id="chapter4" class="chapter-overlay chapter-hidden max-w-3xl flex flex-col items-center text-center">
+            <div class="text-xs sm:text-sm font-mono tracking-[0.25em] text-maroon dark:text-gold uppercase mb-4 flex items-center justify-center gap-3">
+              <span>LOCATION</span>
+              <span class="text-gold font-serif">✦</span>
+              <span>CINEMA ROAD, SIRHIND</span>
+            </div>
+            <h2 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold text-espresso dark:text-ivory leading-[1.08] mb-6">
+              Fresh Stock Today at <br><span class="text-maroon dark:text-gold italic font-normal">Sirhind Counter.</span>
+            </h2>
+            <p class="text-sm sm:text-base md:text-lg font-normal text-espresso/90 dark:text-ivory/90 leading-relaxed max-w-2xl mx-auto mb-8">
+              Stock is dispatched daily in limited quantities from Kandaghat. Message our Sirhind counter on WhatsApp to verify today's arrival or reserve gift boxes.
+            </p>
+            <a href="https://wa.me/919056900448?text=Hello%20Laxmanjee%20Sirhind!%20Is%20today%27s%20fresh%20stock%20dispatched%20from%20Kandaghat%20available%20now%3F" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="inline-flex items-center gap-3 bg-maroon hover:bg-maroon-dark text-ivory px-8 py-3.5 rounded-xl text-base font-bold transition-all duration-300 shadow-xl border border-gold/30 hover:scale-105">
+              <svg class="w-5 h-5 fill-current text-green-400" viewBox="0 0 24 24">
+                <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.964 9.964 0 001.333 4.993L2 22l5.233-1.237a9.982 9.982 0 004.779 1.221h.004c5.505 0 9.988-4.478 9.989-9.985 0-2.668-1.038-5.176-2.925-7.063C17.194 3.05 14.68 2 12.012 2zm5.835 14.168c-.252.709-1.464 1.35-2.02 1.411-.512.057-1.164.084-3.606-.921-2.981-1.226-4.9-4.25-5.048-4.45-.148-.198-1.213-1.615-1.213-3.08 0-1.464.764-2.185 1.037-2.482.274-.296.598-.37.797-.37.199 0 .399.002.573.01.185.008.435-.07.68.518.252.607.86 2.096.935 2.247.075.15.124.325.025.523-.099.198-.149.322-.298.497-.149.175-.313.391-.447.525-.149.149-.304.312-.131.609.173.297.771 1.272 1.654 2.059 1.135 1.012 2.094 1.326 2.392 1.474.298.149.472.124.646-.075.174-.199.746-.87 0.945-1.168.199-.297.398-.248.672-.149.274.099 1.741.82 2.04 0.969.298.149.497.223.572.348.075.124.075.722-.177 1.431z"/>
+              </svg>
+              <span>Message on WhatsApp Now</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- INFINITE INTERACTIVE MARQUEE TICKER (DROOMEDAERIS TICKER STYLE) -->
+    <div class="w-full bg-maroon dark:bg-darkcard text-gold-foil py-4 overflow-hidden border-y border-gold/30 relative select-none z-20">
+      <div class="flex animate-marquee whitespace-nowrap gap-8 text-xs sm:text-sm font-mono tracking-[0.2em] uppercase font-bold">
+        <span>KANDAGHAT MOTHER KITCHEN ✦ ESTD. 1978</span>
+        <span>✦</span>
+        <span>100% PURE A2 DESI GHEE</span>
+        <span>✦</span>
+        <span>ORGANIC HILL JAGGERY</span>
+        <span>✦</span>
+        <span>DAILY SOLAN-SIRHIND EXPRESS</span>
+        <span>✦</span>
+        <span>HERITAGE BESAN BURFEE</span>
+        <span>✦</span>
+        <span>NO ARTIFICIAL ADDITIVES</span>
+        <span>✦</span>
+        <span>KANDAGHAT MOTHER KITCHEN ✦ ESTD. 1978</span>
+        <span>✦</span>
+        <span>100% PURE A2 DESI GHEE</span>
+        <span>✦</span>
+        <span>ORGANIC HILL JAGGERY</span>
+        <span>✦</span>
+        <span>DAILY SOLAN-SIRHIND EXPRESS</span>
+      </div>
+    </div>
+
+    <!-- SECTION: THE HIGHWAY TRANSIT ROUTE & HERITAGE STORY -->
+    <section id="transit-chapter" class="py-20 px-4 sm:px-6 lg:px-8 bg-paper dark:bg-darkcard border-t border-b border-espresso/10 dark:border-gold/20">
+      <div class="max-w-7xl mx-auto">
+
+        <!-- Section Header -->
+        <div class="max-w-3xl mb-14">
+          <div class="inline-flex items-center gap-2 text-maroon dark:text-gold font-semibold text-xs uppercase tracking-widest mb-3">
+            <span class="w-6 h-[1.5px] bg-maroon dark:bg-gold"></span>
+            From Solan Hills to Sirhind Market
+          </div>
+          <h2 class="font-serif text-3xl sm:text-5xl font-bold text-espresso dark:text-ivory mb-5 leading-tight">
+            Fresh Daily Dispatch <br>From Kandaghat Mother Kitchen.
+          </h2>
+          <p class="text-sm sm:text-base text-espresso-soft dark:text-ivory/80 leading-relaxed">
+            Every morning, master sweet craftsmen at Kandaghat slow-roast fresh batches using pure Desi Ghee and mountain dairy. No local cooking or reheating is done at Sirhind—ensuring 100% authentic Kandaghat taste.
+          </p>
+        </div>
+
+        <!-- 4-Step Journey Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <div class="bg-ivory dark:bg-darkbg p-6 sm:p-8 rounded-3xl border border-espresso/10 dark:border-gold/20 relative group hover:border-gold/50 transition-all duration-300 shadow-sm">
+            <div class="w-10 h-10 rounded-2xl bg-maroon dark:bg-gold text-gold-foil dark:text-espresso flex items-center justify-center font-serif font-bold text-lg mb-5 shadow-md">
+              01
+            </div>
+            <div class="text-[11px] font-bold text-pine dark:text-emerald-400 uppercase tracking-wider mb-2">05:00 AM · Kandaghat (4,600 ft)</div>
+            <h3 class="font-serif text-lg font-bold text-espresso dark:text-ivory mb-2">Desi Ghee Churning</h3>
+            <p class="text-xs text-espresso-soft dark:text-ivory/70 leading-relaxed">
+              Pure hill milk is simmered slowly and churned into pure Desi Ghee for the morning's sweet batches.
+            </p>
+          </div>
+
+          <div class="bg-ivory dark:bg-darkbg p-6 sm:p-8 rounded-3xl border border-espresso/10 dark:border-gold/20 relative group hover:border-gold/50 transition-all duration-300 shadow-sm">
+            <div class="w-10 h-10 rounded-2xl bg-maroon dark:bg-gold text-gold-foil dark:text-espresso flex items-center justify-center font-serif font-bold text-lg mb-5 shadow-md">
+              02
+            </div>
+            <div class="text-[11px] font-bold text-pine dark:text-emerald-400 uppercase tracking-wider mb-2">07:30 AM · Mother Kitchen</div>
+            <h3 class="font-serif text-lg font-bold text-espresso dark:text-ivory mb-2">Slow Copper Roasting</h3>
+            <p class="text-xs text-espresso-soft dark:text-ivory/70 leading-relaxed">
+              Gram flour is roasted to rich golden perfection, set into trays, and garnished with hill pistachios.
+            </p>
+          </div>
+
+          <div class="bg-ivory dark:bg-darkbg p-6 sm:p-8 rounded-3xl border border-espresso/10 dark:border-gold/20 relative group hover:border-gold/50 transition-all duration-300 shadow-sm">
+            <div class="w-10 h-10 rounded-2xl bg-maroon dark:bg-gold text-gold-foil dark:text-espresso flex items-center justify-center font-serif font-bold text-lg mb-5 shadow-md">
+              03
+            </div>
+            <div class="text-[11px] font-bold text-pine dark:text-emerald-400 uppercase tracking-wider mb-2">09:00 AM · Highway Dispatch</div>
+            <h3 class="font-serif text-lg font-bold text-espresso dark:text-ivory mb-2">Sealed Express Transit</h3>
+            <p class="text-xs text-espresso-soft dark:text-ivory/70 leading-relaxed">
+              Boxes are sealed in food-grade packs and transported down the Solan-Chandigarh-Sirhind highway.
+            </p>
+          </div>
+
+          <div class="bg-ivory dark:bg-darkbg p-6 sm:p-8 rounded-3xl border border-espresso/10 dark:border-gold/20 relative group hover:border-gold/50 transition-all duration-300 shadow-sm">
+            <div class="w-10 h-10 rounded-2xl bg-maroon dark:bg-gold text-gold-foil dark:text-espresso flex items-center justify-center font-serif font-bold text-lg mb-5 shadow-md">
+              04
+            </div>
+            <div class="text-[11px] font-bold text-pine dark:text-emerald-400 uppercase tracking-wider mb-2">11:30 AM · Sirhind Outlet</div>
+            <h3 class="font-serif text-lg font-bold text-espresso dark:text-ivory mb-2">Counter Display Intake</h3>
+            <p class="text-xs text-espresso-soft dark:text-ivory/70 leading-relaxed">
+              Fresh stock arrives at Cinema Road counter, available immediately for store pickup & WhatsApp booking.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: FULL-WIDTH LUXURY CAROUSEL SLIDER (SHOWCASING REAL SWEETS PHOTOS & CLOSE-UPS) -->
+    <section id="menu-carousel" class="py-20 px-4 sm:px-6 lg:px-8 bg-ivory dark:bg-darkbg overflow-hidden relative">
+      <div class="max-w-7xl mx-auto">
+
+        <!-- Section Header with Controls -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+          <div>
+            <div class="inline-flex items-center gap-2 text-maroon dark:text-gold font-semibold text-xs uppercase tracking-widest mb-3">
+              <span class="w-6 h-[1.5px] bg-maroon dark:bg-gold"></span>
+              Full-Width Product Gallery
+            </div>
+            <h2 class="font-serif text-3xl sm:text-5xl font-bold text-espresso dark:text-ivory leading-tight">
+              Authentic Sweets Gallery <br><span class="text-maroon dark:text-gold italic">Fresh From Kandaghat</span>
+            </h2>
+          </div>
+          
+          <!-- Slider Arrows Controls -->
+          <div class="flex items-center gap-3">
+            <button id="sliderPrevBtn" aria-label="Previous Sweet" class="w-11 h-11 rounded-xl bg-paper dark:bg-darkcard border border-espresso/10 dark:border-gold/30 flex items-center justify-center text-espresso dark:text-gold hover:bg-maroon hover:text-ivory dark:hover:bg-gold dark:hover:text-espresso transition-all duration-300 shadow-sm">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button id="sliderNextBtn" aria-label="Next Sweet" class="w-11 h-11 rounded-xl bg-paper dark:bg-darkcard border border-espresso/10 dark:border-gold/30 flex items-center justify-center text-espresso dark:text-gold hover:bg-maroon hover:text-ivory dark:hover:bg-gold dark:hover:text-espresso transition-all duration-300 shadow-sm">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- CAROUSEL TRACK -->
+        <div class="relative w-full overflow-hidden rounded-3xl border border-espresso/10 dark:border-gold/20 bg-paper dark:bg-darkcard shadow-heritage">
+          <div id="carouselTrack" class="flex transition-transform duration-500 ease-in-out w-full">
+
+            <!-- Slide 1: Almond Besan Barfi (REAL PHOTO) -->
+            <div class="w-full flex-shrink-0 grid grid-cols-1 lg:grid-cols-12 items-center p-6 sm:p-10 lg:p-12 gap-8">
+              <!-- Left Real Image Container (7 Cols) -->
+              <div class="lg:col-span-7 relative h-[320px] sm:h-[420px] bg-ivory dark:bg-darkbg rounded-2xl overflow-hidden flex items-center justify-center p-6 border border-espresso/10 dark:border-gold/20">
+                <img src="sweets/Almond besan barfi .png" alt="Almond Besan Barfi Real Photo" class="h-full w-full object-contain hover:scale-105 transition-transform duration-700">
+                <div class="absolute top-4 left-4 border-l-2 border-gold bg-espresso/90 text-gold text-[11px] font-mono uppercase tracking-wider px-3 py-1 shadow-sm rounded-r-md">
+                  Organic Jaggery Edition
+                </div>
+              </div>
+              <!-- Right Details Panel (5 Cols) -->
+              <div class="lg:col-span-5 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-4">
+                    <span class="text-xs font-mono font-bold text-maroon dark:text-gold uppercase tracking-widest">Original Photo Showcase</span>
+                    <span id="sliderPrice1" class="font-serif text-2xl font-bold text-maroon dark:text-gold bg-maroon-soft dark:bg-gold/15 px-3.5 py-1 rounded-lg border border-maroon/20 dark:border-gold/30">₹300</span>
+                  </div>
+                  <h3 class="font-serif text-3xl sm:text-4xl font-bold text-espresso dark:text-ivory mb-3">Almond Besan Barfi</h3>
+                  <p class="text-xs sm:text-sm text-espresso-soft dark:text-ivory/80 leading-relaxed mb-6">
+                    Handcrafted in Kandaghat using slow-roasted gram flour, pure A2 Desi Ghee, unrefined hill jaggery (Gur), and generous flakes of crunchy almonds. Rich in artisanal flavor.
+                  </p>
+                  <div class="space-y-3 mb-6">
+                    <div class="text-xs font-mono font-semibold uppercase tracking-wider text-espresso-muted dark:text-gold-foil/80">Select Box Weight:</div>
+                    <div class="flex items-center gap-2">
+                      <button onclick="updateSlideItem(1, '500g', 300, 'Almond Besan Barfi')" class="slide-btn-1 active px-4 py-2 rounded-lg text-xs font-mono font-semibold bg-maroon dark:bg-gold text-ivory dark:text-espresso shadow-sm transition-all duration-200">500g Box</button>
+                      <button onclick="updateSlideItem(1, '1kg', 600, 'Almond Besan Barfi')" class="slide-btn-1 px-4 py-2 rounded-lg text-xs font-mono font-semibold bg-ivory dark:bg-darkbg text-espresso dark:text-ivory border border-espresso/10 dark:border-gold/20 transition-all duration-200">1kg Box</button>
+                      <button onclick="updateSlideItem(1, '2kg Box', 1200, 'Almond Besan Barfi')" class="slide-btn-1 px-4 py-2 rounded-lg text-xs font-mono font-semibold bg-ivory dark:bg-darkbg text-espresso dark:text-ivory border border-espresso/10 dark:border-gold/20 transition-all duration-200">2kg Gift Box</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-t border-espresso/10 dark:border-gold/20 pt-5 flex items-center justify-between">
+                  <span id="slideWeight1" class="text-xs text-espresso-muted dark:text-ivory/70">Selected: 500g Box</span>
+                  <a id="slideWa1" href="https://wa.me/919056900448?text=Hi%20Laxmanjee%20Sirhind!%20I%20want%20to%20reserve%20500g%20of%20Almond%20Besan%20Barfi%20for%20₹300." 
+                     target="_blank" class="inline-flex items-center gap-2 bg-maroon hover:bg-maroon-dark dark:bg-gold dark:hover:bg-gold-foil text-ivory dark:text-espresso px-5 py-2.5 rounded-lg text-xs font-bold transition-all shadow-sm">
+                    <span>Reserve on WhatsApp →</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2: Multi-Grain Laddoo (REAL PHOTO) -->
+            <div class="w-full flex-shrink-0 grid grid-cols-1 lg:grid-cols-12 items-center p-6 sm:p-10 lg:p-12 gap-8">
+              <div class="lg:col-span-7 relative h-[320px] sm:h-[420px] bg-ivory dark:bg-darkbg rounded-2xl overflow-hidden flex items-center justify-center p-6 border border-espresso/10 dark:border-gold/20">
+                <img src="sweets/multigrain Laddoo.png" alt="Multi-Grain Laddoo Real Photo" class="h-full w-full object-contain hover:scale-105 transition-transform duration-700">
+                <div class="absolute top-4 left-4 border-l-2 border-emerald-400 bg-espresso/90 text-emerald-300 text-[11px] font-mono uppercase tracking-wider px-3 py-1 shadow-sm rounded-r-md">
+                  Healthy Hill Grain
+                </div>
+              </div>
+              <div class="lg:col-span-5 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-4">
+                    <span class="text-xs font-mono font-bold text-pine dark:text-emerald-400 uppercase tracking-widest">Original Photo Showcase</span>
+                    <span id="sliderPrice2" class="font-serif text-2xl font-bold text-maroon dark:text-gold bg-maroon-soft dark:bg-gold/15 px-3.5 py-1 rounded-lg border border-maroon/20 dark:border-gold/30">₹350</span>
+                  </div>
+                  <h3 class="font-serif text-3xl sm:text-4xl font-bold text-espresso dark:text-ivory mb-3">Multi-Grain Laddoo</h3>
+                  <p class="text-xs sm:text-sm text-espresso-soft dark:text-ivory/80 leading-relaxed mb-6">
+                    A nutritious fusion of roasted Himachali ragi, whole oats, flaxseeds, pumpkin seeds, and almonds bound with pure churned Desi Ghee and natural jaggery.
+                  </p>
+                  <div class="space-y-3 mb-6">
+                    <div class="text-xs font-mono font-semibold uppercase tracking-wider text-espresso-muted dark:text-gold-foil/80">Select Box Weight:</div>
+                    <div class="flex items-center gap-2">
+                      <button onclick="updateSlideItem(2, '500g', 350, 'Multi-Grain Laddoo')" class="slide-btn-2 active px-4 py-2 rounded-lg text-xs font-mono font-semibold bg-maroon dark:bg-gold text-ivory dark:text-espresso shadow-sm transition-all duration-200">500g Box</button>
+                      <button onclick="updateSlideItem(2, '1kg', 700, 'Multi-Grain Laddoo')" class="slide-btn-2 px-4 py-2 rounded-lg text-xs font-mono font-semibold bg-ivory dark:bg-darkbg text-espresso dark:text-ivory border border-espresso/10 dark:border-gold/20 transition-all duration-200">1kg Box</button>
+                      <button onclick="updateSlideItem(2, '2kg Box', 1400, 'Multi-Grain Laddoo')" class="slide-btn-2 px-4 py-2 rounded-lg text-xs font-mono font-semibold bg-ivory dark:bg-darkbg text-espresso dark:text-ivory border border-espresso/10 dark:border-gold/20 transition-all duration-200">2kg Gift Box</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-t border-espresso/10 dark:border-gold/20 pt-5 flex items-center justify-between">
+                  <span id="slideWeight2" class="text-xs text-espresso-muted dark:text-ivory/70">Selected: 500g Box</span>
+                  <a id="slideWa2" href="https://wa.me/919056900448?text=Hi%20Laxmanjee%20Sirhind!%20I%20want%20to%20reserve%20500g%20of%20Multi-Grain%20Laddoo%20for%20₹350." 
+                     target="_blank" class="inline-flex items-center gap-2 bg-maroon hover:bg-maroon-dark dark:bg-gold dark:hover:bg-gold-foil text-ivory dark:text-espresso px-5 py-2.5 rounded-lg text-xs font-bold transition-all shadow-sm">
+                    <span>Reserve on WhatsApp →</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3: Oats Laddoo Classic (REAL PHOTO) -->
+            <div class="w-full flex-shrink-0 grid grid-cols-1 lg:grid-cols-12 items-center p-6 sm:p-10 lg:p-12 gap-8">
+              <div class="lg:col-span-7 relative h-[320px] sm:h-[420px] bg-ivory dark:bg-darkbg rounded-2xl overflow-hidden flex items-center justify-center p-6 border border-espresso/10 dark:border-gold/20">
+                <img src="sweets/oats laddoo.png" alt="Oats Laddoo Classic Real Photo" class="h-full w-full object-contain hover:scale-105 transition-transform duration-700">
+                <div class="absolute top-4 left-4 border-l-2 border-gold bg-espresso/90 text-gold text-[11px] font-mono uppercase tracking-wider px-3 py-1 shadow-sm rounded-r-md">
+                  Rolled Oats & Dry Fruits
+                </div>
+              </div>
+              <div class="lg:col-span-5 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-4">
+                    <span class="text-xs font-mono font-bold text-maroon dark:text-gold uppercase tracking-widest">Original Photo Showcase</span>
+                    <span id="sliderPrice3" class="font-serif text-2xl font-bold text-maroon dark:text-gold bg-maroon-soft dark:bg-gold/15 px-3.5 py-1 rounded-lg border border-maroon/20 dark:border-gold/30">₹350</span>
+                  </div>
+                  <h3 class="font-serif text-3xl sm:text-4xl font-bold text-espresso dark:text-ivory mb-3">Oats Laddoo (Classic)</h3>
+                  <p class="text-xs sm:text-sm text-espresso-soft dark:text-ivory/80 leading-relaxed mb-6">
+                    Slow-roasted rolled oats simmered in pure Desi Ghee, sweetened naturally with hill jaggery, and enriched with hand-sliced cashew nuts and almonds.
+                  </p>
+                  <div class="space-y-3 mb-6">
+                    <div class="text-xs font-mono font-semibold uppercase tracking-wider text-espresso-muted dark:text-gold-foil/80">Select Box Weight:</div>
+                    <div class="flex items-center gap-2">
+                      <button onclick="updateSlideItem(3, '500g', 350, 'Oats Laddoo Classic')" class="slide-btn-3 active px-4 py-2 rounded-lg text-xs font-mono font-semibold bg-maroon dark:bg-gold text-ivory dark:text-espresso shadow-sm transition-all duration-200">500g Box</button>
+                      <button onclick="updateSlideItem(3, '1kg', 700, 'Oats Laddoo Classic')" class="slide-btn-3 px-4 py-2 rounded-lg text-xs font-mono font-semibold bg-ivory dark:bg-darkbg text-espresso dark:text-ivory border border-espresso/10 dark:border-gold/20 transition-all duration-200">1kg Box</button>
+                      <button onclick="updateSlideItem(3, '2kg Box', 1400, 'Oats Laddoo Classic')" class="slide-btn-3 px-4 py-2 rounded-lg text-xs font-mono font-semibold bg-ivory dark:bg-darkbg text-espresso dark:text-ivory border border-espresso/10 dark:border-gold/20 transition-all duration-200">2kg Gift Box</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-t border-espresso/10 dark:border-gold/20 pt-5 flex items-center justify-between">
+                  <span id="slideWeight3" class="text-xs text-espresso-muted dark:text-ivory/70">Selected: 500g Box</span>
+                  <a id="slideWa3" href="https://wa.me/919056900448?text=Hi%20Laxmanjee%20Sirhind!%20I%20want%20to%20reserve%20500g%20of%20Oats%20Laddoo%20Classic%20for%20₹350." 
+                     target="_blank" class="inline-flex items-center gap-2 bg-maroon hover:bg-maroon-dark dark:bg-gold dark:hover:bg-gold-foil text-ivory dark:text-espresso px-5 py-2.5 rounded-lg text-xs font-bold transition-all shadow-sm">
+                    <span>Reserve on WhatsApp →</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4: Oats Laddoo Special (REAL PHOTO 2) -->
+            <div class="w-full flex-shrink-0 grid grid-cols-1 lg:grid-cols-12 items-center p-6 sm:p-10 lg:p-12 gap-8">
+              <div class="lg:col-span-7 relative h-[320px] sm:h-[420px] bg-ivory dark:bg-darkbg rounded-2xl overflow-hidden flex items-center justify-center p-6 border border-espresso/10 dark:border-gold/20">
+                <img src="sweets/oats laddoo 2.png" alt="Oats Laddoo Special Real Photo" class="h-full w-full object-contain hover:scale-105 transition-transform duration-700">
+                <div class="absolute top-4 left-4 border-l-2 border-gold bg-espresso/90 text-gold text-[11px] font-mono uppercase tracking-wider px-3 py-1 shadow-sm rounded-r-md">
+                  Pistachio & Cardamom Edition
+                </div>
+              </div>
+              <div class="lg:col-span-5 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between mb-4">
+                    <span class="text-xs font-mono font-bold text-maroon dark:text-gold uppercase tracking-widest">Original Photo Showcase</span>
+                    <span id="sliderPrice4" class="font-serif text-2xl font-bold text-maroon dark:text-gold bg-maroon-soft dark:bg-gold/15 px-3.5 py-1 rounded-lg border border-maroon/20 dark:border-gold/30">₹380</span>
+                  </div>
+                  <h3 class="font-serif text-3xl sm:text-4xl font-bold text-espresso dark:text-ivory mb-3">Oats Laddoo (Special)</h3>
+                  <p class="text-xs sm:text-sm text-espresso-soft dark:text-ivory/80 leading-relaxed mb-6">
+                    Special edition dry fruit oats laddoo prepared with green cardamom, roasted pistachios, sunflower seeds, and pure A2 Desi Ghee.
+                  </p>
+                  <div class="space-y-3 mb-6">
+                    <div class="text-xs font-mono font-semibold uppercase tracking-wider text-espresso-muted dark:text-gold-foil/80">Select Box Weight:</div>
+                    <div class="flex items-center gap-2">
+                      <button onclick="updateSlideItem(4, '500g', 380, 'Oats Laddoo Special')" class="slide-btn-4 active px-4 py-2 rounded-lg text-xs font-mono font-semibold bg-maroon dark:bg-gold text-ivory dark:text-espresso shadow-sm transition-all duration-200">500g Box</button>
+                      <button onclick="updateSlideItem(4, '1kg', 760, 'Oats Laddoo Special')" class="slide-btn-4 px-4 py-2 rounded-lg text-xs font-mono font-semibold bg-ivory dark:bg-darkbg text-espresso dark:text-ivory border border-espresso/10 dark:border-gold/20 transition-all duration-200">1kg Box</button>
+                      <button onclick="updateSlideItem(4, '2kg Box', 1520, 'Oats Laddoo Special')" class="slide-btn-4 px-4 py-2 rounded-lg text-xs font-mono font-semibold bg-ivory dark:bg-darkbg text-espresso dark:text-ivory border border-espresso/10 dark:border-gold/20 transition-all duration-200">2kg Gift Box</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-t border-espresso/10 dark:border-gold/20 pt-5 flex items-center justify-between">
+                  <span id="slideWeight4" class="text-xs text-espresso-muted dark:text-ivory/70">Selected: 500g Box</span>
+                  <a id="slideWa4" href="https://wa.me/919056900448?text=Hi%20Laxmanjee%20Sirhind!%20I%20want%20to%20reserve%20500g%20of%20Oats%20Laddoo%20Special%20for%20₹380." 
+                     target="_blank" class="inline-flex items-center gap-2 bg-maroon hover:bg-maroon-dark dark:bg-gold dark:hover:bg-gold-foil text-ivory dark:text-espresso px-5 py-2.5 rounded-lg text-xs font-bold transition-all shadow-sm">
+                    <span>Reserve on WhatsApp →</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: SCALABLE FILTERABLE SWEETS CATALOG GRID -->
+    <section id="catalog-section" class="py-20 px-4 sm:px-6 lg:px-8 bg-paper dark:bg-darkcard border-t border-espresso/10 dark:border-gold/20">
+      <div class="max-w-7xl mx-auto">
+
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+          <div>
+            <div class="inline-flex items-center gap-2 text-maroon dark:text-gold font-semibold text-xs uppercase tracking-widest mb-3">
+              <span class="w-6 h-[1.5px] bg-maroon dark:bg-gold"></span>
+              Complete Sweets Menu
+            </div>
+            <h2 class="font-serif text-3xl sm:text-5xl font-bold text-espresso dark:text-ivory leading-tight">
+              Kandaghat Confections Catalog <br><span class="text-maroon dark:text-gold italic">Prepared Daily & Shipped Fresh</span>
+            </h2>
+          </div>
+
+          <!-- Category Filter Tabs (Editorial Hairline Underline Tabs) -->
+          <div class="flex flex-wrap items-center gap-6 border-b border-espresso/15 dark:border-gold/20 pb-2">
+            <button data-filter="all" class="catalog-filter-btn active pb-2 border-b-2 border-maroon dark:border-gold font-mono text-xs uppercase tracking-wider font-bold text-maroon dark:text-gold transition-all duration-200">
+              All Items (8)
+            </button>
+            <button data-filter="barfi" class="catalog-filter-btn pb-2 border-b-2 border-transparent font-mono text-xs uppercase tracking-wider font-medium text-espresso/70 dark:text-ivory/70 hover:text-maroon dark:hover:text-gold transition-all duration-200">
+              Barfis & Burfees
+            </button>
+            <button data-filter="laddoo" class="catalog-filter-btn pb-2 border-b-2 border-transparent font-mono text-xs uppercase tracking-wider font-medium text-espresso/70 dark:text-ivory/70 hover:text-maroon dark:hover:text-gold transition-all duration-200">
+              Healthy Laddoos
+            </button>
+            <button data-filter="gift" class="catalog-filter-btn pb-2 border-b-2 border-transparent font-mono text-xs uppercase tracking-wider font-medium text-espresso/70 dark:text-ivory/70 hover:text-maroon dark:hover:text-gold transition-all duration-200">
+              Festive Boxes
+            </button>
+          </div>
+        </div>
+
+        <!-- PRODUCT CATALOG GRID -->
+        <div id="catalogGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <!-- Item 1: Almond Besan Barfi -->
+          <div class="catalog-item bg-ivory dark:bg-darkbg p-6 rounded-3xl border border-espresso/10 dark:border-gold/20 flex flex-col justify-between hover:border-gold/50 transition-all duration-300 shadow-sm" data-category="barfi">
+            <div>
+              <div class="relative h-48 bg-paper dark:bg-darkcard rounded-2xl overflow-hidden mb-5 flex items-center justify-center p-4 border border-espresso/10 dark:border-gold/15">
+                <img src="sweets/Almond besan barfi .png" alt="Almond Besan Barfi" class="h-full w-full object-contain hover:scale-105 transition-transform duration-500">
+                <span class="absolute top-3 left-3 border-l-2 border-gold bg-espresso/90 text-gold text-[10px] font-mono uppercase tracking-wider px-2.5 py-1 rounded-r-md shadow-sm">
+                  Gur Special
+                </span>
+              </div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-[11px] font-mono font-bold text-maroon dark:text-gold uppercase tracking-wider">Barfis</span>
+                <span id="catPrice1" class="font-serif text-xl font-bold text-maroon dark:text-gold">₹300</span>
+              </div>
+              <h3 class="font-serif text-xl font-bold text-espresso dark:text-ivory mb-2">Almond Besan Barfi</h3>
+              <p class="text-xs text-espresso-soft dark:text-ivory/70 leading-relaxed mb-4">
+                Slow-roasted gram flour in pure Desi Ghee with unrefined hill jaggery and roasted almond flakes.
+              </p>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 mb-4">
+                <button data-cat-weight="catItem1" data-weight="500g" data-price="300" data-name="Almond Besan Barfi" class="cat-w-btn active px-3 py-1.5 rounded-lg text-[11px] font-mono font-semibold bg-maroon dark:bg-gold text-ivory dark:text-espresso">500g</button>
+                <button data-cat-weight="catItem1" data-weight="1kg" data-price="600" data-name="Almond Besan Barfi" class="cat-w-btn px-3 py-1.5 rounded-lg text-[11px] font-mono font-semibold bg-paper dark:bg-darkcard text-espresso dark:text-ivory border border-espresso/10 dark:border-gold/20">1kg</button>
+                <button data-cat-weight="catItem1" data-weight="2kg Box" data-price="1200" data-name="Almond Besan Barfi" class="cat-w-btn px-3 py-1.5 rounded-lg text-[11px] font-mono font-semibold bg-paper dark:bg-darkcard text-espresso dark:text-ivory border border-espresso/10 dark:border-gold/20">2kg</button>
+              </div>
+              <a id="catWa1" href="https://wa.me/919056900448?text=Hi%20Laxmanjee%20Sirhind!%20I%20want%20to%20reserve%20500g%20of%20Almond%20Besan%20Barfi%20for%20₹300." 
+                 target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-maroon hover:bg-maroon-dark dark:bg-gold dark:hover:bg-gold-foil text-ivory dark:text-espresso py-2.5 rounded-lg text-xs font-bold transition-all shadow-sm">
+                <span>Reserve on WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Item 2: Multi-Grain Laddoo -->
+          <div class="catalog-item bg-ivory dark:bg-darkbg p-6 rounded-3xl border border-espresso/10 dark:border-gold/20 flex flex-col justify-between hover:border-gold/50 transition-all duration-300 shadow-sm" data-category="laddoo">
+            <div>
+              <div class="relative h-48 bg-paper dark:bg-darkcard rounded-2xl overflow-hidden mb-5 flex items-center justify-center p-4 border border-espresso/10 dark:border-gold/15">
+                <img src="sweets/multigrain Laddoo.png" alt="Multi-Grain Laddoo" class="h-full w-full object-contain hover:scale-105 transition-transform duration-500">
+                <span class="absolute top-3 left-3 border-l-2 border-emerald-400 bg-espresso/90 text-emerald-300 text-[10px] font-mono uppercase tracking-wider px-2.5 py-1 rounded-r-md shadow-sm">
+                  High Fiber
+                </span>
+              </div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-[11px] font-mono font-bold text-pine dark:text-emerald-400 uppercase tracking-wider">Laddoos</span>
+                <span id="catPrice2" class="font-serif text-xl font-bold text-maroon dark:text-gold">₹350</span>
+              </div>
+              <h3 class="font-serif text-xl font-bold text-espresso dark:text-ivory mb-2">Multi-Grain Laddoo</h3>
+              <p class="text-xs text-espresso-soft dark:text-ivory/70 leading-relaxed mb-4">
+                Himachali ragi, oats, flaxseeds, and pumpkin seeds bound with Desi Ghee and jaggery.
+              </p>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 mb-4">
+                <button data-cat-weight="catItem2" data-weight="500g" data-price="350" data-name="Multi-Grain Laddoo" class="cat-w-btn active px-3 py-1.5 rounded-lg text-[11px] font-mono font-semibold bg-maroon dark:bg-gold text-ivory dark:text-espresso">500g</button>
+                <button data-cat-weight="catItem2" data-weight="1kg" data-price="700" data-name="Multi-Grain Laddoo" class="cat-w-btn px-3 py-1.5 rounded-lg text-[11px] font-mono font-semibold bg-paper dark:bg-darkcard text-espresso dark:text-ivory border border-espresso/10 dark:border-gold/20">1kg</button>
+                <button data-cat-weight="catItem2" data-weight="2kg Box" data-price="1400" data-name="Multi-Grain Laddoo" class="cat-w-btn px-3 py-1.5 rounded-lg text-[11px] font-mono font-semibold bg-paper dark:bg-darkcard text-espresso dark:text-ivory border border-espresso/10 dark:border-gold/20">2kg</button>
+              </div>
+              <a id="catWa2" href="https://wa.me/919056900448?text=Hi%20Laxmanjee%20Sirhind!%20I%20want%20to%20reserve%20500g%20of%20Multi-Grain%20Laddoo%20for%20₹350." 
+                 target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-maroon hover:bg-maroon-dark dark:bg-gold dark:hover:bg-gold-foil text-ivory dark:text-espresso py-2.5 rounded-lg text-xs font-bold transition-all shadow-sm">
+                <span>Reserve on WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Item 3: Oats Laddoo Classic -->
+          <div class="catalog-item bg-ivory dark:bg-darkbg p-6 rounded-3xl border border-espresso/10 dark:border-gold/20 flex flex-col justify-between hover:border-gold/50 transition-all duration-300 shadow-sm" data-category="laddoo">
+            <div>
+              <div class="relative h-48 bg-paper dark:bg-darkcard rounded-2xl overflow-hidden mb-5 flex items-center justify-center p-4 border border-espresso/10 dark:border-gold/15">
+                <img src="sweets/oats laddoo.png" alt="Oats Laddoo Classic" class="h-full w-full object-contain hover:scale-105 transition-transform duration-500">
+                <span class="absolute top-3 left-3 border-l-2 border-gold bg-espresso/90 text-gold text-[10px] font-mono uppercase tracking-wider px-2.5 py-1 rounded-r-md shadow-sm">
+                  Dry Fruits
+                </span>
+              </div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-[11px] font-mono font-bold text-gold-dark dark:text-gold uppercase tracking-wider">Laddoos</span>
+                <span id="catPrice3" class="font-serif text-xl font-bold text-maroon dark:text-gold">₹350</span>
+              </div>
+              <h3 class="font-serif text-xl font-bold text-espresso dark:text-ivory mb-2">Oats Laddoo (Classic)</h3>
+              <p class="text-xs text-espresso-soft dark:text-ivory/70 leading-relaxed mb-4">
+                Roasted rolled oats, cashew nuts, almonds, and hill jaggery in pure churned ghee.
+              </p>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 mb-4">
+                <button data-cat-weight="catItem3" data-weight="500g" data-price="350" data-name="Oats Laddoo Classic" class="cat-w-btn active px-3 py-1.5 rounded-lg text-[11px] font-mono font-semibold bg-maroon dark:bg-gold text-ivory dark:text-espresso">500g</button>
+                <button data-cat-weight="catItem3" data-weight="1kg" data-price="700" data-name="Oats Laddoo Classic" class="cat-w-btn px-3 py-1.5 rounded-lg text-[11px] font-mono font-semibold bg-paper dark:bg-darkcard text-espresso dark:text-ivory border border-espresso/10 dark:border-gold/20">1kg</button>
+                <button data-cat-weight="catItem3" data-weight="2kg Box" data-price="1400" data-name="Oats Laddoo Classic" class="cat-w-btn px-3 py-1.5 rounded-lg text-[11px] font-mono font-semibold bg-paper dark:bg-darkcard text-espresso dark:text-ivory border border-espresso/10 dark:border-gold/20">2kg</button>
+              </div>
+              <a id="catWa3" href="https://wa.me/919056900448?text=Hi%20Laxmanjee%20Sirhind!%20I%20want%20to%20reserve%20500g%20of%20Oats%20Laddoo%20Classic%20for%20₹350." 
+                 target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-maroon hover:bg-maroon-dark dark:bg-gold dark:hover:bg-gold-foil text-ivory dark:text-espresso py-2.5 rounded-lg text-xs font-bold transition-all shadow-sm">
+                <span>Reserve on WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Item 4: Oats Laddoo Special -->
+          <div class="catalog-item bg-ivory dark:bg-darkbg p-6 rounded-3xl border border-espresso/10 dark:border-gold/20 flex flex-col justify-between hover:border-gold/50 transition-all duration-300 shadow-sm" data-category="laddoo">
+            <div>
+              <div class="relative h-48 bg-paper dark:bg-darkcard rounded-2xl overflow-hidden mb-5 flex items-center justify-center p-4 border border-espresso/10 dark:border-gold/15">
+                <img src="sweets/oats laddoo 2.png" alt="Oats Laddoo Special" class="h-full w-full object-contain hover:scale-105 transition-transform duration-500">
+                <span class="absolute top-3 left-3 border-l-2 border-gold bg-espresso/90 text-gold text-[10px] font-mono uppercase tracking-wider px-2.5 py-1 rounded-r-md shadow-sm">
+                  Pistachio Edition
+                </span>
+              </div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-[11px] font-mono font-bold text-maroon dark:text-gold uppercase tracking-wider">Laddoos</span>
+                <span id="catPrice4" class="font-serif text-xl font-bold text-maroon dark:text-gold">₹380</span>
+              </div>
+              <h3 class="font-serif text-xl font-bold text-espresso dark:text-ivory mb-2">Oats Laddoo (Special)</h3>
+              <p class="text-xs text-espresso-soft dark:text-ivory/70 leading-relaxed mb-4">
+                Special edition oats laddoo infused with cardamom, pistachios, and sunflower seeds.
+              </p>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 mb-4">
+                <button data-cat-weight="catItem4" data-weight="500g" data-price="380" data-name="Oats Laddoo Special" class="cat-w-btn active px-3 py-1.5 rounded-lg text-[11px] font-mono font-semibold bg-maroon dark:bg-gold text-ivory dark:text-espresso">500g</button>
+                <button data-cat-weight="catItem4" data-weight="1kg" data-price="760" data-name="Oats Laddoo Special" class="cat-w-btn px-3 py-1.5 rounded-lg text-[11px] font-mono font-semibold bg-paper dark:bg-darkcard text-espresso dark:text-ivory border border-espresso/10 dark:border-gold/20">1kg</button>
+                <button data-cat-weight="catItem4" data-weight="2kg Box" data-price="1520" data-name="Oats Laddoo Special" class="cat-w-btn px-3 py-1.5 rounded-lg text-[11px] font-mono font-semibold bg-paper dark:bg-darkcard text-espresso dark:text-ivory border border-espresso/10 dark:border-gold/20">2kg</button>
+              </div>
+              <a id="catWa4" href="https://wa.me/919056900448?text=Hi%20Laxmanjee%20Sirhind!%20I%20want%20to%20reserve%20500g%20of%20Oats%20Laddoo%20Special%20for%20₹380." 
+                 target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-maroon hover:bg-maroon-dark dark:bg-gold dark:hover:bg-gold-foil text-ivory dark:text-espresso py-2.5 rounded-lg text-xs font-bold transition-all shadow-sm">
+                <span>Reserve on WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Item 5: Kandaghat Heritage Besan Burfee -->
+          <div class="catalog-item bg-ivory dark:bg-darkbg p-6 rounded-3xl border border-espresso/10 dark:border-gold/20 flex flex-col justify-between hover:border-gold/50 transition-all duration-300 shadow-sm" data-category="barfi">
+            <div>
+              <div class="relative h-48 bg-paper dark:bg-darkcard rounded-2xl overflow-hidden mb-5 flex items-center justify-center p-4 border border-espresso/10 dark:border-gold/15">
+                <div class="w-16 h-16 rounded-2xl bg-maroon/15 dark:bg-gold/20 flex items-center justify-center text-2xl font-serif text-maroon dark:text-gold font-bold">
+                  1978
+                </div>
+                <span class="absolute top-3 left-3 border-l-2 border-gold bg-espresso/90 text-gold text-[10px] font-mono uppercase tracking-wider px-2.5 py-1 rounded-r-md shadow-sm">
+                  Original Recipe
+                </span>
+              </div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-[11px] font-mono font-bold text-maroon dark:text-gold uppercase tracking-wider">Heritage Barfi</span>
+                <span id="catPrice5" class="font-serif text-xl font-bold text-maroon dark:text-gold">₹280</span>
+              </div>
+              <h3 class="font-serif text-xl font-bold text-espresso dark:text-ivory mb-2">Kandaghat Besan Burfee</h3>
+              <p class="text-xs text-espresso-soft dark:text-ivory/70 leading-relaxed mb-4">
+                The flagship 1978 recipe slow-cooked in brass pans with pure A2 Desi Ghee and pistachios.
+              </p>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 mb-4">
+                <button data-cat-weight="catItem5" data-weight="500g" data-price="280" data-name="Kandaghat Besan Burfee" class="cat-w-btn active px-3 py-1.5 rounded-lg text-[11px] font-mono font-semibold bg-maroon dark:bg-gold text-ivory dark:text-espresso">500g</button>
+                <button data-cat-weight="catItem5" data-weight="1kg" data-price="560" data-name="Kandaghat Besan Burfee" class="cat-w-btn px-3 py-1.5 rounded-lg text-[11px] font-mono font-semibold bg-paper dark:bg-darkcard text-espresso dark:text-ivory border border-espresso/10 dark:border-gold/20">1kg</button>
+                <button data-cat-weight="catItem5" data-weight="2kg Box" data-price="1120" data-name="Kandaghat Besan Burfee" class="cat-w-btn px-3 py-1.5 rounded-lg text-[11px] font-mono font-semibold bg-paper dark:bg-darkcard text-espresso dark:text-ivory border border-espresso/10 dark:border-gold/20">2kg</button>
+              </div>
+              <a id="catWa5" href="https://wa.me/919056900448?text=Hi%20Laxmanjee%20Sirhind!%20I%20want%20to%20reserve%20500g%20of%20Kandaghat%20Besan%20Burfee%20for%20₹280." 
+                 target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-maroon hover:bg-maroon-dark dark:bg-gold dark:hover:bg-gold-foil text-ivory dark:text-espresso py-2.5 rounded-lg text-xs font-bold transition-all shadow-sm">
+                <span>Reserve on WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Item 6: Solan Jaggery Peda -->
+          <div class="catalog-item bg-ivory dark:bg-darkbg p-6 rounded-3xl border border-espresso/10 dark:border-gold/20 flex flex-col justify-between hover:border-gold/50 transition-all duration-300 shadow-sm" data-category="barfi">
+            <div>
+              <div class="relative h-48 bg-paper dark:bg-darkcard rounded-2xl overflow-hidden mb-5 flex items-center justify-center p-4 border border-espresso/10 dark:border-gold/15">
+                <div class="w-16 h-16 rounded-2xl bg-gold/20 text-maroon dark:text-gold flex items-center justify-center text-2xl">
+                  🍯
+                </div>
+                <span class="absolute top-3 left-3 border-l-2 border-gold bg-espresso/90 text-gold text-[10px] font-mono uppercase tracking-wider px-2.5 py-1 rounded-r-md shadow-sm">
+                  Hill Milk
+                </span>
+              </div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-[11px] font-mono font-bold text-gold-dark dark:text-gold uppercase tracking-wider">Traditional Sweets</span>
+                <span id="catPrice6" class="font-serif text-xl font-bold text-maroon dark:text-gold">₹320</span>
+              </div>
+              <h3 class="font-serif text-xl font-bold text-espresso dark:text-ivory mb-2">Solan Jaggery Peda</h3>
+              <p class="text-xs text-espresso-soft dark:text-ivory/70 leading-relaxed mb-4">
+                Fresh hill mawa simmered with unrefined Himachal jaggery and green cardamom pods.
+              </p>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 mb-4">
+                <button data-cat-weight="catItem6" data-weight="500g" data-price="320" data-name="Solan Jaggery Peda" class="cat-w-btn active px-3 py-1.5 rounded-lg text-[11px] font-mono font-semibold bg-maroon dark:bg-gold text-ivory dark:text-espresso">500g</button>
+                <button data-cat-weight="catItem6" data-weight="1kg" data-price="640" data-name="Solan Jaggery Peda" class="cat-w-btn px-3 py-1.5 rounded-lg text-[11px] font-mono font-semibold bg-paper dark:bg-darkcard text-espresso dark:text-ivory border border-espresso/10 dark:border-gold/20">1kg</button>
+                <button data-cat-weight="catItem6" data-weight="2kg Box" data-price="1280" data-name="Solan Jaggery Peda" class="cat-w-btn px-3 py-1.5 rounded-lg text-[11px] font-mono font-semibold bg-paper dark:bg-darkcard text-espresso dark:text-ivory border border-espresso/10 dark:border-gold/20">2kg</button>
+              </div>
+              <a id="catWa6" href="https://wa.me/919056900448?text=Hi%20Laxmanjee%20Sirhind!%20I%20want%20to%20reserve%20500g%20of%20Solan%20Jaggery%20Peda%20for%20₹320." 
+                 target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-maroon hover:bg-maroon-dark dark:bg-gold dark:hover:bg-gold-foil text-ivory dark:text-espresso py-2.5 rounded-lg text-xs font-bold transition-all shadow-sm">
+                <span>Reserve on WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Item 7: Royal Kandaghat Gift Box -->
+          <div class="catalog-item bg-ivory dark:bg-darkbg p-6 rounded-3xl border border-espresso/10 dark:border-gold/20 flex flex-col justify-between hover:border-gold/50 transition-all duration-300 shadow-sm" data-category="gift">
+            <div>
+              <div class="relative h-48 bg-paper dark:bg-darkcard rounded-2xl overflow-hidden mb-5 flex items-center justify-center p-4 border border-espresso/10 dark:border-gold/15">
+                <div class="w-16 h-16 rounded-2xl bg-maroon dark:bg-gold text-gold-foil dark:text-espresso flex items-center justify-center text-2xl">
+                  🎁
+                </div>
+                <span class="absolute top-3 left-3 border-l-2 border-gold bg-espresso/90 text-gold text-[10px] font-mono uppercase tracking-wider px-2.5 py-1 rounded-r-md shadow-sm">
+                  Assorted Box
+                </span>
+              </div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-[11px] font-mono font-bold text-maroon dark:text-gold uppercase tracking-wider">Gift Boxes</span>
+                <span id="catPrice7" class="font-serif text-xl font-bold text-maroon dark:text-gold">₹750</span>
+              </div>
+              <h3 class="font-serif text-xl font-bold text-espresso dark:text-ivory mb-2">Kandaghat Heritage Box</h3>
+              <p class="text-xs text-espresso-soft dark:text-ivory/70 leading-relaxed mb-4">
+                4-in-1 luxury gift pack featuring Besan Burfee, Almond Barfi, Multi-Grain & Oats Laddoos.
+              </p>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 mb-4">
+                <button data-cat-weight="catItem7" data-weight="1kg" data-price="750" data-name="Kandaghat Heritage Gift Box" class="cat-w-btn active px-3 py-1.5 rounded-lg text-[11px] font-mono font-semibold bg-maroon dark:bg-gold text-ivory dark:text-espresso">1kg Box</button>
+                <button data-cat-weight="catItem7" data-weight="2kg Box" data-price="1500" data-name="Kandaghat Heritage Gift Box" class="cat-w-btn px-3 py-1.5 rounded-lg text-[11px] font-mono font-semibold bg-paper dark:bg-darkcard text-espresso dark:text-ivory border border-espresso/10 dark:border-gold/20">2kg Box</button>
+              </div>
+              <a id="catWa7" href="https://wa.me/919056900448?text=Hi%20Laxmanjee%20Sirhind!%20I%20want%20to%20reserve%201kg%20of%20Kandaghat%20Heritage%20Gift%20Box%20for%20₹750." 
+                 target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-maroon hover:bg-maroon-dark dark:bg-gold dark:hover:bg-gold-foil text-ivory dark:text-espresso py-2.5 rounded-lg text-xs font-bold transition-all shadow-sm">
+                <span>Reserve on WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Item 8: Sirhind Special Celebration Box -->
+          <div class="catalog-item bg-ivory dark:bg-darkbg p-6 rounded-3xl border border-espresso/10 dark:border-gold/20 flex flex-col justify-between hover:border-gold/50 transition-all duration-300 shadow-sm" data-category="gift">
+            <div>
+              <div class="relative h-48 bg-paper dark:bg-darkcard rounded-2xl overflow-hidden mb-5 flex items-center justify-center p-4 border border-espresso/10 dark:border-gold/15">
+                <div class="w-16 h-16 rounded-2xl bg-pine/20 text-pine dark:text-emerald-400 flex items-center justify-center text-2xl">
+                  ✨
+                </div>
+                <span class="absolute top-3 left-3 border-l-2 border-emerald-400 bg-espresso/90 text-emerald-300 text-[10px] font-mono uppercase tracking-wider px-2.5 py-1 rounded-r-md shadow-sm">
+                  Wedding Special
+                </span>
+              </div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-[11px] font-mono font-bold text-pine dark:text-emerald-400 uppercase tracking-wider">Gift Boxes</span>
+                <span id="catPrice8" class="font-serif text-xl font-bold text-maroon dark:text-gold">₹850</span>
+              </div>
+              <h3 class="font-serif text-xl font-bold text-espresso dark:text-ivory mb-2">Sirhind Celebration Pack</h3>
+              <p class="text-xs text-espresso-soft dark:text-ivory/70 leading-relaxed mb-4">
+                Premium festive hamper with handpicked dry fruit confections in golden foil packaging.
+              </p>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 mb-4">
+                <button data-cat-weight="catItem8" data-weight="1kg" data-price="850" data-name="Sirhind Celebration Pack" class="cat-w-btn active px-3 py-1.5 rounded-lg text-[11px] font-mono font-semibold bg-maroon dark:bg-gold text-ivory dark:text-espresso">1kg Box</button>
+                <button data-cat-weight="catItem8" data-weight="2kg Box" data-price="1700" data-name="Sirhind Celebration Pack" class="cat-w-btn px-3 py-1.5 rounded-lg text-[11px] font-mono font-semibold bg-paper dark:bg-darkcard text-espresso dark:text-ivory border border-espresso/10 dark:border-gold/20">2kg Box</button>
+              </div>
+              <a id="catWa8" href="https://wa.me/919056900448?text=Hi%20Laxmanjee%20Sirhind!%20I%20want%20to%20reserve%201kg%20of%20Sirhind%20Celebration%20Pack%20for%20₹850." 
+                 target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-maroon hover:bg-maroon-dark dark:bg-gold dark:hover:bg-gold-foil text-ivory dark:text-espresso py-2.5 rounded-lg text-xs font-bold transition-all shadow-sm">
+                <span>Reserve on WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: TRUST SIGNALS, FOUNDER STORY & CUSTOMER TESTIMONIALS -->
+    <section id="trust-section" class="py-20 px-4 sm:px-6 lg:px-8 bg-ivory dark:bg-darkbg border-t border-espresso/10 dark:border-gold/20">
+      <div class="max-w-7xl mx-auto">
+
+        <!-- Section Header -->
+        <div class="max-w-3xl mb-14">
+          <div class="inline-flex items-center gap-2 text-maroon dark:text-gold font-semibold text-xs uppercase tracking-widest mb-3">
+            <span class="w-6 h-[1.5px] bg-maroon dark:bg-gold"></span>
+            Heritage Trust & Reviews
+          </div>
+          <h2 class="font-serif text-3xl sm:text-5xl font-bold text-espresso dark:text-ivory leading-tight mb-4">
+            Loved by Highway Travelers <br><span class="text-maroon dark:text-gold italic">& Solan Regulars Since 1978</span>
+          </h2>
+          <p class="text-sm sm:text-base text-espresso-soft dark:text-ivory/80 leading-relaxed">
+            From a humble roadside kitchen in Kandaghat (Solan, HP) to Punjab’s favorite sweet counter in Sirhind.
+          </p>
+        </div>
+
+        <!-- 3 Customer Reviews Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+
+          <div class="bg-paper dark:bg-darkcard p-8 rounded-3xl border border-espresso/10 dark:border-gold/20 flex flex-col justify-between shadow-sm relative">
+            <div class="text-gold text-lg mb-4">★★★★★</div>
+            <p class="text-xs sm:text-sm text-espresso dark:text-ivory italic leading-relaxed mb-6">
+              "Stopping at Kandaghat for Besan Burfee was our family tradition every time we traveled to Shimla. Now having the daily counter in Sirhind means we don't have to wait for mountain trips!"
+            </p>
+            <div class="flex items-center gap-3 border-t border-espresso/10 dark:border-gold/15 pt-4">
+              <div class="w-9 h-9 rounded-xl bg-maroon text-ivory flex items-center justify-center font-bold text-sm">R</div>
+              <div>
+                <div class="text-xs font-bold text-espresso dark:text-ivory">Ramanpreet Singh</div>
+                <div class="text-[10px] font-mono text-espresso-muted dark:text-gold-foil/70">Highway Traveler · Ludhiana</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-paper dark:bg-darkcard p-8 rounded-3xl border border-espresso/10 dark:border-gold/20 flex flex-col justify-between shadow-sm relative">
+            <div class="text-gold text-lg mb-4">★★★★★</div>
+            <p class="text-xs sm:text-sm text-espresso dark:text-ivory italic leading-relaxed mb-6">
+              "You can immediately taste the pure Desi Ghee and natural jaggery. No heavy artificial sweetness. The Sirhind store stock arrives fresh every morning—exactly like Kandaghat!"
+            </p>
+            <div class="flex items-center gap-3 border-t border-espresso/10 dark:border-gold/15 pt-4">
+              <div class="w-9 h-9 rounded-xl bg-pine text-ivory flex items-center justify-center font-bold text-sm">G</div>
+              <div>
+                <div class="text-xs font-bold text-espresso dark:text-ivory">Gurmeet Kaur</div>
+                <div class="text-[10px] font-mono text-espresso-muted dark:text-gold-foil/70">Local Resident · Sirhind Market</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-paper dark:bg-darkcard p-8 rounded-3xl border border-espresso/10 dark:border-gold/20 flex flex-col justify-between shadow-sm relative">
+            <div class="text-gold text-lg mb-4">★★★★★</div>
+            <p class="text-xs sm:text-sm text-espresso dark:text-ivory italic leading-relaxed mb-6">
+              "We ordered 50 gift boxes of Multi-Grain & Oats Laddoos for Diwali through WhatsApp. Delivered fresh, beautifully packed, and loved by every single relative!"
+            </p>
+            <div class="flex items-center gap-3 border-t border-espresso/10 dark:border-gold/15 pt-4">
+              <div class="w-9 h-9 rounded-xl bg-gold text-espresso flex items-center justify-center font-bold text-sm">H</div>
+              <div>
+                <div class="text-xs font-bold text-espresso dark:text-ivory">Dr. Harish Sharma</div>
+                <div class="text-[10px] font-mono text-espresso-muted dark:text-gold-foil/70">Regular Customer · Chandigarh</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: LOCATION, STORE HOURS & DIRECT GOOGLE MAPS -->
+    <section id="location-section" class="py-20 px-4 sm:px-6 lg:px-8 bg-paper dark:bg-darkcard border-t border-espresso/10 dark:border-gold/20">
+      <div class="max-w-7xl mx-auto">
+
+        <!-- Section Header -->
+        <div class="max-w-3xl mb-14">
+          <div class="inline-flex items-center gap-2 text-maroon dark:text-gold font-semibold text-xs uppercase tracking-widest mb-3">
+            <span class="w-6 h-[1.5px] bg-maroon dark:bg-gold"></span>
+            Visit Us in Sirhind
+          </div>
+          <h2 class="font-serif text-3xl sm:text-5xl font-bold text-espresso dark:text-ivory leading-tight mb-4">
+            Sirhind Counter & Inquiries
+          </h2>
+          <p class="text-sm sm:text-base text-espresso-soft dark:text-ivory/80 leading-relaxed">
+            Located on Cinema Road in Main Market Sirhind. Visit us for daily fresh counter pickups or connect via WhatsApp for direct reservations.
+          </p>
+        </div>
+
+        <!-- 2-Column Grid: Info Cards + Map Embed -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+          <!-- Left Info Cards (5 Cols) -->
+          <div class="lg:col-span-5 space-y-6">
+
+            <!-- Address Card -->
+            <div class="bg-ivory dark:bg-darkbg p-7 rounded-3xl border border-espresso/10 dark:border-gold/20 shadow-sm">
+              <div class="flex items-center gap-3.5 mb-3">
+                <div class="w-10 h-10 rounded-2xl bg-maroon dark:bg-gold text-gold-foil dark:text-espresso flex items-center justify-center text-lg shrink-0">
+                  📍
+                </div>
+                <div>
+                  <h3 class="font-serif text-lg font-bold text-espresso dark:text-ivory">Franchise Store Address</h3>
+                  <p class="text-[11px] font-mono font-semibold text-pine dark:text-emerald-400 uppercase tracking-wider">Official Franchise Outlet</p>
+                </div>
+              </div>
+              <p class="text-xs sm:text-sm text-espresso-soft dark:text-ivory/80 leading-relaxed mb-3">
+                Laxmanjee Sweets, Cinema Road, Main Market, Sirhind, Punjab 140406
+              </p>
+              <a href="https://maps.google.com/?q=Laxmanjee-Sirhind" target="_blank" rel="noopener noreferrer" 
+                 class="inline-flex items-center gap-1.5 text-xs font-bold text-maroon dark:text-gold hover:underline">
+                Get Driving Directions on Google Maps →
+              </a>
+            </div>
+
+            <!-- Operating Hours Card -->
+            <div class="bg-ivory dark:bg-darkbg p-7 rounded-3xl border border-espresso/10 dark:border-gold/20 shadow-sm">
+              <div class="flex items-center gap-3.5 mb-3">
+                <div class="w-10 h-10 rounded-2xl bg-gold/20 text-maroon dark:text-gold flex items-center justify-center text-lg shrink-0">
+                  🕒
+                </div>
+                <div>
+                  <h3 class="font-serif text-lg font-bold text-espresso dark:text-ivory">Daily Counter Timings</h3>
+                  <p class="text-[11px] font-mono font-semibold text-maroon dark:text-gold uppercase tracking-wider">Fresh Shipments Daily</p>
+                </div>
+              </div>
+              
+              <div class="space-y-2.5 text-xs border-t border-espresso/10 dark:border-gold/20 pt-3">
+                <div class="flex items-center justify-between text-espresso dark:text-ivory font-medium">
+                  <span>Monday – Saturday</span>
+                  <span class="font-bold text-maroon dark:text-gold">8:30 AM – 9:00 PM</span>
+                </div>
+                <div class="flex items-center justify-between text-espresso dark:text-ivory font-medium">
+                  <span>Sunday</span>
+                  <span class="font-bold text-maroon dark:text-gold">9:00 AM – 8:30 PM</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phone Line Card -->
+            <div class="bg-ivory dark:bg-darkbg p-7 rounded-3xl border border-espresso/10 dark:border-gold/20 shadow-sm">
+              <div class="flex items-center gap-3.5 mb-3">
+                <div class="w-10 h-10 rounded-2xl bg-pine/20 text-pine dark:text-emerald-400 flex items-center justify-center text-lg shrink-0">
+                  📞
+                </div>
+                <div>
+                  <h3 class="font-serif text-lg font-bold text-espresso dark:text-ivory">Direct Counter Contact</h3>
+                  <p class="text-[11px] font-mono font-semibold text-pine dark:text-emerald-400 uppercase tracking-wider">Stock Inquiries & Reservations</p>
+                </div>
+              </div>
+              <p class="text-base font-bold text-espresso dark:text-ivory mb-1">
+                <a href="tel:+919056900448" class="hover:text-maroon dark:hover:text-gold transition-colors">+91 9056900448</a>
+              </p>
+              <p class="text-[11px] text-espresso-soft dark:text-ivory/70">
+                Call during store hours for immediate stock status or festive bulk packaging.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Right Google Maps Embed Frame (7 Cols) -->
+          <div class="lg:col-span-7 h-full min-h-[480px] bg-ivory dark:bg-darkbg rounded-3xl border border-espresso/10 dark:border-gold/20 overflow-hidden shadow-heritage">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4684.959089045084!2d76.38397321218822!3d30.62684177452975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39101fa6aadbfeb3%3A0x38c968b8030ba1d1!2sLaxmanjee-Sirhind!5e1!3m2!1sen!2sin!4v1788671881097!5m2!1sen!2sin" 
+              class="w-full h-full min-h-[480px] border-0" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="strict-origin-when-cross-origin"
+              title="Laxmanjee Sweets Sirhind Outlet Location Map">
+            </iframe>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: HERITAGE TRUST SIGNALS & QUALITY CERTIFICATIONS (ESTD. 1978) -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-paper dark:bg-darkcard border-t border-espresso/10 dark:border-gold/20">
+      <div class="max-w-7xl mx-auto">
+        <!-- Section Header -->
+        <div class="max-w-3xl mb-14 text-center mx-auto">
+          <div class="inline-flex items-center gap-2 text-maroon dark:text-gold font-semibold text-xs uppercase tracking-widest mb-3">
+            <span class="w-6 h-[1.5px] bg-maroon dark:bg-gold"></span>
+            Heritage & Trust Since 1978
+            <span class="w-6 h-[1.5px] bg-maroon dark:bg-gold"></span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-5xl font-bold text-espresso dark:text-ivory leading-tight mb-4">
+            Why Highway Travelers & Locals Trust Laxmanjee
+          </h2>
+          <p class="text-sm sm:text-base text-espresso-soft dark:text-ivory/80 leading-relaxed">
+            Four decades of unbroken commitment to pure ingredients, zero adulteration, and traditional Himachali sweetmaking recipes.
+          </p>
+        </div>
+
+        <!-- 4-Pillar Trust Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div class="bg-ivory dark:bg-darkbg p-6 sm:p-8 rounded-3xl border border-espresso/10 dark:border-gold/20 text-center flex flex-col items-center shadow-sm">
+            <div class="w-12 h-12 rounded-xl bg-maroon/10 dark:bg-gold/20 text-maroon dark:text-gold flex items-center justify-center text-xl mb-4 border border-gold/30">
+              🏅
+            </div>
+            <h3 class="font-serif text-lg font-bold text-espresso dark:text-ivory mb-2">100% Pure A2 Desi Ghee</h3>
+            <p class="text-xs text-espresso-soft dark:text-ivory/70 leading-relaxed">
+              Every single batch is simmered exclusively in pure churned Desi Ghee. Zero palm oil or vegetable vanaspati substitutes.
+            </p>
+          </div>
+
+          <div class="bg-ivory dark:bg-darkbg p-6 sm:p-8 rounded-3xl border border-espresso/10 dark:border-gold/20 text-center flex flex-col items-center shadow-sm">
+            <div class="w-12 h-12 rounded-xl bg-pine/10 dark:bg-pine/30 text-pine dark:text-emerald-400 flex items-center justify-center text-xl mb-4 border border-pine/30">
+              🌱
+            </div>
+            <h3 class="font-serif text-lg font-bold text-espresso dark:text-ivory mb-2">100% Pure Vegetarian</h3>
+            <p class="text-xs text-espresso-soft dark:text-ivory/70 leading-relaxed">
+              Strictly eggless and prepared in dedicated pure vegetarian brass copper vats at the Kandaghat mother kitchen.
+            </p>
+          </div>
+
+          <div class="bg-ivory dark:bg-darkbg p-6 sm:p-8 rounded-3xl border border-espresso/10 dark:border-gold/20 text-center flex flex-col items-center shadow-sm">
+            <div class="w-12 h-12 rounded-xl bg-gold/20 text-maroon dark:text-gold flex items-center justify-center text-xl mb-4 border border-gold/30">
+              🏔️
+            </div>
+            <h3 class="font-serif text-lg font-bold text-espresso dark:text-ivory mb-2">Mountain Altitude Pure Air</h3>
+            <p class="text-xs text-espresso-soft dark:text-ivory/70 leading-relaxed">
+              Prepared at 4,600 feet in Solan hills using fresh regional dairy milk and unrefined hill jaggery.
+            </p>
+          </div>
+
+          <div class="bg-ivory dark:bg-darkbg p-6 sm:p-8 rounded-3xl border border-espresso/10 dark:border-gold/20 text-center flex flex-col items-center shadow-sm">
+            <div class="w-12 h-12 rounded-xl bg-maroon/10 dark:bg-gold/20 text-maroon dark:text-gold flex items-center justify-center text-xl mb-4 border border-gold/30">
+              ⭐
+            </div>
+            <h3 class="font-serif text-lg font-bold text-espresso dark:text-ivory mb-2">4.9★ Customer Rating</h3>
+            <p class="text-xs text-espresso-soft dark:text-ivory/70 leading-relaxed">
+              Decades of customer trust along the Shimla highway, now served daily at Cinema Road counter in Sirhind.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: INTERACTIVE FAQ ACCORDION -->
+    <section id="faq-section" class="py-20 px-4 sm:px-6 lg:px-8 bg-ivory dark:bg-darkbg border-t border-espresso/10 dark:border-gold/20">
+      <div class="max-w-4xl mx-auto">
+        <!-- Section Header -->
+        <div class="mb-14 text-center">
+          <div class="inline-flex items-center gap-2 text-maroon dark:text-gold font-semibold text-xs uppercase tracking-widest mb-3">
+            <span class="w-6 h-[1.5px] bg-maroon dark:bg-gold"></span>
+            Got Questions?
+            <span class="w-6 h-[1.5px] bg-maroon dark:bg-gold"></span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-5xl font-bold text-espresso dark:text-ivory leading-tight mb-4">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-sm sm:text-base text-espresso-soft dark:text-ivory/80 leading-relaxed">
+            Everything you need to know about our Kandaghat heritage sweets, counter pickup, shelf life, and WhatsApp reservations.
+          </p>
+        </div>
+
+        <!-- Accordion Items -->
+        <div class="space-y-4">
+          
+          <details class="group bg-paper dark:bg-darkcard p-6 rounded-3xl border border-espresso/10 dark:border-gold/20 shadow-sm [&_summary::-webkit-details-marker]:hidden transition-all duration-300">
+            <summary class="flex items-center justify-between cursor-pointer text-base sm:text-lg font-serif font-bold text-espresso dark:text-ivory">
+              <span>Are all sweets prepared at the Kandaghat mother kitchen?</span>
+              <span class="w-7 h-7 rounded-lg border border-maroon/20 dark:border-gold/30 text-maroon dark:text-gold flex items-center justify-center font-mono text-xs shrink-0 transition-transform duration-300 group-open:rotate-45">+</span>
+            </summary>
+            <p class="mt-4 text-xs sm:text-sm text-espresso-soft dark:text-ivory/80 leading-relaxed border-t border-espresso/10 dark:border-gold/20 pt-4">
+              Yes, 100%! Every sweet tray is cooked exclusively at our heritage mother kitchen in Kandaghat (Solan, HP at 4,600 ft altitude). No local cooking, frying, or reheating is done at the Sirhind outlet—ensuring the exact authentic hill taste.
+            </p>
+          </details>
+
+          <details class="group bg-paper dark:bg-darkcard p-6 rounded-3xl border border-espresso/10 dark:border-gold/20 shadow-sm [&_summary::-webkit-details-marker]:hidden transition-all duration-300">
+            <summary class="flex items-center justify-between cursor-pointer text-base sm:text-lg font-serif font-bold text-espresso dark:text-ivory">
+              <span>What is the shelf life of Besan Burfee and Laddoos?</span>
+              <span class="w-7 h-7 rounded-lg border border-maroon/20 dark:border-gold/30 text-maroon dark:text-gold flex items-center justify-center font-mono text-xs shrink-0 transition-transform duration-300 group-open:rotate-45">+</span>
+            </summary>
+            <p class="mt-4 text-xs sm:text-sm text-espresso-soft dark:text-ivory/80 leading-relaxed border-t border-espresso/10 dark:border-gold/20 pt-4">
+              Because our confections are made using pure A2 Desi Ghee and traditional slow-roasting techniques with zero artificial preservatives, Besan Burfee and Dry Fruit Laddoos stay fresh for up to 30 days at ambient room temperature.
+            </p>
+          </details>
+
+          <details class="group bg-paper dark:bg-darkcard p-6 rounded-3xl border border-espresso/10 dark:border-gold/20 shadow-sm [&_summary::-webkit-details-marker]:hidden transition-all duration-300">
+            <summary class="flex items-center justify-between cursor-pointer text-base sm:text-lg font-serif font-bold text-espresso dark:text-ivory">
+              <span>Can I reserve sweet boxes on WhatsApp before visiting the counter?</span>
+              <span class="w-7 h-7 rounded-lg border border-maroon/20 dark:border-gold/30 text-maroon dark:text-gold flex items-center justify-center font-mono text-xs shrink-0 transition-transform duration-300 group-open:rotate-45">+</span>
+            </summary>
+            <p class="mt-4 text-xs sm:text-sm text-espresso-soft dark:text-ivory/80 leading-relaxed border-t border-espresso/10 dark:border-gold/20 pt-4">
+              Yes! Because daily stock dispatched down the highway from Kandaghat is limited and sells out quickly, we recommend clicking "Message on WhatsApp" to reserve your 500g, 1kg, or gift boxes for guaranteed counter pickup at Sirhind.
+            </p>
+          </details>
+
+          <details class="group bg-paper dark:bg-darkcard p-6 rounded-3xl border border-espresso/10 dark:border-gold/20 shadow-sm [&_summary::-webkit-details-marker]:hidden transition-all duration-300">
+            <summary class="flex items-center justify-between cursor-pointer text-base sm:text-lg font-serif font-bold text-espresso dark:text-ivory">
+              <span>Are all confections 100% vegetarian and eggless?</span>
+              <span class="w-7 h-7 rounded-lg border border-maroon/20 dark:border-gold/30 text-maroon dark:text-gold flex items-center justify-center font-mono text-xs shrink-0 transition-transform duration-300 group-open:rotate-45">+</span>
+            </summary>
+            <p class="mt-4 text-xs sm:text-sm text-espresso-soft dark:text-ivory/80 leading-relaxed border-t border-espresso/10 dark:border-gold/20 pt-4">
+              Absolutely. All Laxmanjee products are 100% pure vegetarian, eggless, and prepared under strict hygiene guidelines using natural ingredients, organic hill jaggery, nuts, and Desi Ghee.
+            </p>
+          </details>
+
+          <details class="group bg-paper dark:bg-darkcard p-6 rounded-3xl border border-espresso/10 dark:border-gold/20 shadow-sm [&_summary::-webkit-details-marker]:hidden transition-all duration-300">
+            <summary class="flex items-center justify-between cursor-pointer text-base sm:text-lg font-serif font-bold text-espresso dark:text-ivory">
+              <span>Do you offer festive or wedding bulk packaging?</span>
+              <span class="w-7 h-7 rounded-lg border border-maroon/20 dark:border-gold/30 text-maroon dark:text-gold flex items-center justify-center font-mono text-xs shrink-0 transition-transform duration-300 group-open:rotate-45">+</span>
+            </summary>
+            <p class="mt-4 text-xs sm:text-sm text-espresso-soft dark:text-ivory/80 leading-relaxed border-t border-espresso/10 dark:border-gold/20 pt-4">
+              Yes, we specialize in heritage festive gift boxes and bulk wedding orders. Connect directly with our Sirhind outlet on WhatsApp (+91 9056900448) at least 2 days prior to schedule fresh Kandaghat dispatch for your event.
+            </p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CONVERSION BANNER -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-maroon dark:bg-darkcard text-ivory text-center relative overflow-hidden border-t border-gold/20">
+      <div class="max-w-4xl mx-auto relative z-10">
+        <span class="inline-flex items-center gap-2 text-gold-foil text-xs font-mono uppercase tracking-widest border-l-2 border-gold pl-3 mb-5 py-0.5">
+          Kandaghat Stock Confirmation
+        </span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-bold mb-5 leading-tight">
+          Check Today's Fresh Kandaghat Stock
+        </h2>
+        <p class="text-sm sm:text-lg text-ivory/80 max-w-2xl mx-auto mb-8 leading-relaxed">
+          Message our Sirhind store counter on WhatsApp to verify today's fresh arrival or book sweet boxes.
+        </p>
+        <a href="https://wa.me/919056900448?text=Hello%20Laxmanjee%20Sirhind!%20Is%20today%27s%20fresh%20stock%20dispatched%20from%20Kandaghat%20available%20now%3F" 
+           target="_blank"
+           rel="noopener noreferrer"
+           class="inline-flex items-center gap-3 bg-gold hover:bg-gold-foil text-espresso px-8 py-3.5 rounded-xl text-base font-bold transition-all duration-300 shadow-xl hover:scale-105">
+          <svg class="w-5 h-5 fill-current text-green-700" viewBox="0 0 24 24">
+            <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.964 9.964 0 001.333 4.993L2 22l5.233-1.237a9.982 9.982 0 004.779 1.221h.004c5.505 0 9.988-4.478 9.989-9.985 0-2.668-1.038-5.176-2.925-7.063C17.194 3.05 14.68 2 12.012 2zm5.835 14.168c-.252.709-1.464 1.35-2.02 1.411-.512.057-1.164.084-3.606-.921-2.981-1.226-4.9-4.25-5.048-4.45-.148-.198-1.213-1.615-1.213-3.08 0-1.464.764-2.185 1.037-2.482.274-.296.598-.37.797-.37.199 0 .399.002.573.01.185.008.435-.07.68.518.252.607.86 2.096.935 2.247.075.15.124.325.025.523-.099.198-.149.322-.298.497-.149.175-.313.391-.447.525-.149.149-.304.312-.131.609.173.297.771 1.272 1.654 2.059 1.135 1.012 2.094 1.326 2.392 1.474.298.149.472.124.646-.075.174-.199.746-.87 0.945-1.168.199-.297.398-.248.672-.149.274.099 1.741.82 2.04 0.969.298.149.497.223.572.348.075.124.075.722-.177 1.431z"/>
+          </svg>
+          <span>Message on WhatsApp Now</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-espresso dark:bg-darkbg text-ivory/80 py-10 px-4 sm:px-6 lg:px-8 border-t border-gold/20">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-center md:text-left">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-maroon dark:bg-gold text-gold-foil dark:text-espresso flex items-center justify-center font-serif font-bold text-sm border border-gold/30">
+          L
+        </div>
+        <div>
+          <span class="font-serif font-bold text-ivory text-sm block">Laxmanjee Sweets — Sirhind Franchise Outlet</span>
+          <span class="text-ivory/50">100% Prepared at Mother Kitchen, Kandaghat, HP (Estd. 1978)</span>
+        </div>
+      </div>
+      <div class="text-ivory/50">
+        © 2026 Laxmanjee Sweets Sirhind. All rights reserved. Cinema Road, Main Market, Sirhind.
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- SCRIPTS & INTERACTION LOGIC -->
+  <script>
+    (function() {
+      // 360 Sequence Config (60 high-performance GPU-decoded frames mapped to 60Hz display refresh rate)
+      const TOTAL_FRAMES = 60;
+      const frameImages = [];
+      const frameBitmaps = [];
+      let currentFrameIndex = 0;
+      let targetFrameIndex = 0;
+      let isManualDragging = false;
+      let dragStartX = 0;
+      let dragStartFrame = 0;
+      let animFrameRequested = false;
+
+      const canvas = document.getElementById('sequenceCanvas');
+      const ctx = canvas ? canvas.getContext('2d') : null;
+
+      if (ctx) {
+        ctx.imageSmoothingEnabled = true;
+        ctx.imageSmoothingQuality = 'medium';
+      }
+
+      const chapter1 = document.getElementById('chapter1');
+      const chapter2 = document.getElementById('chapter2');
+      const chapter3 = document.getElementById('chapter3');
+      const chapter4 = document.getElementById('chapter4');
+
+      // Theme Toggle Logic with localStorage Persistence & System Preference Detection
+      const themeToggleBtn = document.getElementById('themeToggleBtn');
+      const themeIcon = document.getElementById('themeIcon');
+
+      const savedTheme = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+        document.documentElement.classList.add('dark');
+        if (themeIcon) themeIcon.innerText = '☀️';
+      } else {
+        document.documentElement.classList.remove('dark');
+        if (themeIcon) themeIcon.innerText = '🌙';
+      }
+
+      if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+          document.documentElement.classList.toggle('dark');
+          const isDark = document.documentElement.classList.contains('dark');
+          localStorage.setItem('theme', isDark ? 'dark' : 'light');
+          if (themeIcon) themeIcon.innerText = isDark ? '☀️' : '🌙';
+          drawFrame(currentFrameIndex);
+        });
+      }
+
+      // Mobile Menu Toggle
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+
+      // Preloader with GPU ImageBitmap pre-decoding
+      function preloadSequence() {
+        for (let i = 0; i < 10; i++) {
+          loadSingleFrame(i);
+        }
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(() => loadRemainingFrames(10));
+        } else {
+          setTimeout(() => loadRemainingFrames(10), 50);
+        }
+      }
+
+      const PRIMARY_THEME_FOLDER = 'himachal_theme';
+      const FALLBACK_THEME_FOLDER = 'moving_piece-jpg';
+      const HIMACHAL_TOTAL_FRAMES = 120;
+
+      function loadSingleFrame(idx) {
+        if (frameImages[idx]) return;
+
+        const himachalFrameNum = Math.floor((idx * (HIMACHAL_TOTAL_FRAMES - 1)) / (TOTAL_FRAMES - 1)) + 1;
+        const himachalStr = String(himachalFrameNum).padStart(3, '0');
+
+        const img = new Image();
+        img.src = `${PRIMARY_THEME_FOLDER}/ezgif-frame-${himachalStr}.jpg`;
+
+        img.onerror = function() {
+          const fallbackNum = Math.floor((idx * 239) / (TOTAL_FRAMES - 1)) + 1;
+          const fallbackStr = String(fallbackNum).padStart(3, '0');
+          img.src = `${FALLBACK_THEME_FOLDER}/ezgif-frame-${fallbackStr}.jpg`;
+        };
+
+        img.onload = function() {
+          frameImages[idx] = img;
+
+          // GPU Pre-decode via createImageBitmap for zero-latency 60fps canvas drawing
+          if ('createImageBitmap' in window) {
+            createImageBitmap(img).then(bitmap => {
+              frameBitmaps[idx] = bitmap;
+              if (idx === 0) {
+                drawFrame(0);
+                hideHeroLoader();
+              }
+              if (currentFrameIndex === idx) drawFrame(currentFrameIndex);
+            }).catch(() => {
+              if (idx === 0) {
+                drawFrame(0);
+                hideHeroLoader();
+              }
+            });
+          } else {
+            if (idx === 0) {
+              drawFrame(0);
+              hideHeroLoader();
+            }
+            if (currentFrameIndex === idx) drawFrame(currentFrameIndex);
+          }
+        };
+      }
+
+      function hideHeroLoader() {
+        const heroLoader = document.getElementById('heroLoader');
+        if (heroLoader && heroLoader.style.opacity !== '0') {
+          heroLoader.style.opacity = '0';
+          setTimeout(() => heroLoader.style.display = 'none', 500);
+        }
+      }
+
+      function loadRemainingFrames(startIdx) {
+        for (let i = startIdx; i < TOTAL_FRAMES; i++) {
+          (function(index) {
+            setTimeout(() => {
+              loadSingleFrame(index);
+            }, (index - startIdx) * 10);
+          })(i);
+        }
+      }
+
+      function getDrawable(targetIdx) {
+        if (frameBitmaps[targetIdx]) return frameBitmaps[targetIdx];
+        if (frameImages[targetIdx] && frameImages[targetIdx].complete) return frameImages[targetIdx];
+
+        for (let offset = 1; offset < TOTAL_FRAMES; offset++) {
+          const left = targetIdx - offset;
+          const right = targetIdx + offset;
+          if (left >= 0 && frameBitmaps[left]) return frameBitmaps[left];
+          if (right < TOTAL_FRAMES && frameBitmaps[right]) return frameBitmaps[right];
+          if (left >= 0 && frameImages[left] && frameImages[left].complete) return frameImages[left];
+          if (right < TOTAL_FRAMES && frameImages[right] && frameImages[right].complete) return frameImages[right];
+        }
+        return frameBitmaps[0] || frameImages[0];
+      }
+
+      function resizeCanvas() {
+        if (!canvas) return;
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        drawFrame(currentFrameIndex);
+      }
+      window.addEventListener('resize', resizeCanvas);
+
+      // Ultra-fast Canvas Frame Drawing
+      function drawFrame(idx) {
+        currentFrameIndex = Math.max(0, Math.min(TOTAL_FRAMES - 1, idx));
+        const item = getDrawable(currentFrameIndex);
+
+        if (!canvas || !ctx) return;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        const isDark = document.documentElement.classList.contains('dark');
+        ctx.fillStyle = isDark ? '#140508' : '#FBF3E7';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        if (item) {
+          const itemWidth = item.width || 1280;
+          const itemHeight = item.height || 720;
+
+          const hRatio = canvas.width / itemWidth;
+          const vRatio = canvas.height / itemHeight;
+          const ratio = Math.max(hRatio, vRatio);
+
+          const centerShiftX = (canvas.width - itemWidth * ratio) / 2;
+          const centerShiftY = (canvas.height - itemHeight * ratio) / 2;
+
+          ctx.drawImage(
+            item,
+            0, 0, itemWidth, itemHeight,
+            centerShiftX, centerShiftY, itemWidth * ratio, itemHeight * ratio
+          );
+        }
+      }
+
+      // Decoupled requestAnimationFrame canvas renderer (Zero Jitter)
+      function requestCanvasRender(idx) {
+        targetFrameIndex = idx;
+        if (!animFrameRequested) {
+          animFrameRequested = true;
+          requestAnimationFrame(() => {
+            drawFrame(targetFrameIndex);
+            animFrameRequested = false;
+          });
+        }
+      }
+
+      function hideDragHint() {
+        const dragHint = document.getElementById('dragHint');
+        if (dragHint && dragHint.style.opacity !== '0') {
+          dragHint.style.opacity = '0';
+          setTimeout(() => dragHint.style.display = 'none', 400);
+        }
+      }
+
+      // Smooth Scroll Handler
+      function onScroll() {
+        if (isManualDragging) return;
+        hideDragHint();
+
+        const sequenceSection = document.getElementById('hero-sequence');
+        if (!sequenceSection) return;
+
+        const rect = sequenceSection.getBoundingClientRect();
+        const totalScrollable = sequenceSection.offsetHeight - window.innerHeight;
+
+        if (totalScrollable <= 0) return;
+
+        const currentScroll = Math.max(0, -rect.top);
+        const p = Math.min(1.0, Math.max(0.0, currentScroll / totalScrollable));
+
+        const frameToDraw = Math.min(TOTAL_FRAMES - 1, Math.floor(p * TOTAL_FRAMES));
+        requestCanvasRender(frameToDraw);
+
+        updateChapterOverlays(p);
+      }
+
+      function updateChapterOverlays(p) {
+        if (p < 0.22) {
+          setChapterActive(chapter1);
+          setChapterHidden(chapter2);
+          setChapterHidden(chapter3);
+          setChapterHidden(chapter4);
+        } else if (p >= 0.22 && p < 0.52) {
+          setChapterHidden(chapter1);
+          setChapterActive(chapter2);
+          setChapterHidden(chapter3);
+          setChapterHidden(chapter4);
+        } else if (p >= 0.52 && p < 0.78) {
+          setChapterHidden(chapter1);
+          setChapterHidden(chapter2);
+          setChapterActive(chapter3);
+          setChapterHidden(chapter4);
+        } else {
+          setChapterHidden(chapter1);
+          setChapterHidden(chapter2);
+          setChapterHidden(chapter3);
+          setChapterActive(chapter4);
+        }
+      }
+
+      function setChapterActive(el) {
+        if (!el) return;
+        el.classList.remove('chapter-hidden');
+        el.classList.add('chapter-visible');
+      }
+
+      function setChapterHidden(el) {
+        if (!el) return;
+        el.classList.remove('chapter-visible');
+        el.classList.add('chapter-hidden');
+      }
+
+      window.scrollToChapter = function(targetRatio) {
+        const sequenceSection = document.getElementById('hero-sequence');
+        if (!sequenceSection) return;
+        const totalScrollable = sequenceSection.offsetHeight - window.innerHeight;
+        const targetY = sequenceSection.offsetTop + (targetRatio * totalScrollable);
+        window.scrollTo({ top: targetY, behavior: 'smooth' });
+      };
+
+      // Pointer Drag to Rotate
+      function onPointerDown(e) {
+        isManualDragging = true;
+        hideDragHint();
+        dragStartX = e.clientX || (e.touches && e.touches[0].clientX);
+        dragStartFrame = currentFrameIndex;
+      }
+
+      function onPointerMove(e) {
+        if (!isManualDragging) return;
+        const clientX = e.clientX || (e.touches && e.touches[0].clientX);
+        const deltaX = clientX - dragStartX;
+
+        const frameShift = Math.round(deltaX * 0.4);
+        let newFrame = (dragStartFrame + frameShift) % TOTAL_FRAMES;
+        if (newFrame < 0) newFrame += TOTAL_FRAMES;
+
+        requestCanvasRender(newFrame);
+      }
+
+      function onPointerUp() {
+        isManualDragging = false;
+      }
+
+      if (canvas) {
+        canvas.addEventListener('mousedown', onPointerDown);
+        window.addEventListener('mousemove', onPointerMove);
+        window.addEventListener('mouseup', onPointerUp);
+
+        canvas.addEventListener('touchstart', onPointerDown, { passive: true });
+        window.addEventListener('touchmove', onPointerMove, { passive: true });
+        window.addEventListener('touchend', onPointerUp);
+      }
+
+      // -------------------------------------------------------------
+      // CAROUSEL SLIDER ENGINE (FOR REAL PRODUCT PHOTOS)
+      // -------------------------------------------------------------
+      let currentSlide = 0;
+      const totalSlides = 4;
+      const carouselTrack = document.getElementById('carouselTrack');
+      const prevBtn = document.getElementById('sliderPrevBtn');
+      const nextBtn = document.getElementById('sliderNextBtn');
+
+      function updateCarousel() {
+        if (!carouselTrack) return;
+        carouselTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+        for (let i = 0; i < totalSlides; i++) {
+          const dot = document.getElementById(`dot${i}`);
+          if (dot) {
+            if (i === currentSlide) {
+              dot.className = 'w-8 h-1.5 rounded-sm bg-maroon dark:bg-gold transition-all duration-300';
+            } else {
+              dot.className = 'w-3 h-1.5 rounded-sm bg-espresso/20 dark:bg-gold/30 hover:bg-maroon transition-all duration-300';
+            }
+          }
+        }
+      }
+
+      window.goToSlide = function(idx) {
+        currentSlide = (idx + totalSlides) % totalSlides;
+        updateCarousel();
+      };
+
+      if (prevBtn) prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
+      if (nextBtn) nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
+
+      // Slide Product Calculator & Pre-filled WhatsApp Generator
+      window.updateSlideItem = function(slideNum, weightStr, priceNum, itemName) {
+        const priceEl = document.getElementById(`sliderPrice${slideNum}`);
+        const weightEl = document.getElementById(`slideWeight${slideNum}`);
+        const waEl = document.getElementById(`slideWa${slideNum}`);
+
+        if (priceEl) priceEl.innerText = `₹${priceNum.toLocaleString()}`;
+        if (weightEl) weightEl.innerText = `Selected: ${weightStr}`;
+
+        if (waEl) {
+          const encodedMsg = encodeURIComponent(`Hi Laxmanjee Sirhind! I want to reserve ${weightStr} of ${itemName} for ₹${priceNum}.`);
+          waEl.href = `https://wa.me/919056900448?text=${encodedMsg}`;
+        }
+
+        const btns = document.querySelectorAll(`.slide-btn-${slideNum}`);
+        btns.forEach(btn => {
+          const btnWeight = btn.getAttribute('data-weight') || btn.innerText.trim();
+          if (btnWeight === weightStr || btn.innerText.trim().startsWith(weightStr)) {
+            btn.className = `slide-btn-${slideNum} active px-4 py-2 rounded-lg text-xs font-mono font-semibold bg-maroon dark:bg-gold text-ivory dark:text-espresso shadow-sm transition-all duration-200`;
+          } else {
+            btn.className = `slide-btn-${slideNum} px-4 py-2 rounded-lg text-xs font-mono font-semibold bg-ivory dark:bg-darkbg text-espresso dark:text-ivory border border-espresso/10 dark:border-gold/20 transition-all duration-200`;
+          }
+        });
+      };
+
+      // -------------------------------------------------------------
+      // CATEGORY CATALOG FILTERING ENGINE & WEIGHT SELECTORS
+      // -------------------------------------------------------------
+      const filterBtns = document.querySelectorAll('.catalog-filter-btn');
+      const catalogItems = document.querySelectorAll('.catalog-item');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => {
+            b.classList.remove('active', 'border-maroon', 'dark:border-gold', 'text-maroon', 'dark:text-gold', 'font-bold');
+            b.classList.add('border-transparent', 'text-espresso/70', 'dark:text-ivory/70', 'font-medium');
+          });
+          btn.classList.add('active', 'border-maroon', 'dark:border-gold', 'text-maroon', 'dark:text-gold', 'font-bold');
+          btn.classList.remove('border-transparent', 'text-espresso/70', 'dark:text-ivory/70', 'font-medium');
+
+          const filter = btn.getAttribute('data-filter');
+          catalogItems.forEach(item => {
+            if (filter === 'all' || item.getAttribute('data-category') === filter) {
+              item.style.display = 'flex';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Category Weight Toggle Buttons
+      document.querySelectorAll('.cat-w-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const group = btn.getAttribute('data-cat-weight');
+          const weight = btn.getAttribute('data-weight');
+          const price = btn.getAttribute('data-price');
+          const name = btn.getAttribute('data-name');
+          const itemIdx = group.replace('catItem', '');
+
+          const priceEl = document.getElementById(`catPrice${itemIdx}`);
+          const waEl = document.getElementById(`catWa${itemIdx}`);
+
+          if (priceEl) priceEl.innerText = `₹${price}`;
+          if (waEl) {
+            const msg = encodeURIComponent(`Hi Laxmanjee Sirhind! I want to reserve ${weight} of ${name} for ₹${price}.`);
+            waEl.href = `https://wa.me/919056900448?text=${msg}`;
+          }
+
+          document.querySelectorAll(`[data-cat-weight="${group}"]`).forEach(b => {
+            b.classList.remove('active', 'bg-maroon', 'dark:bg-gold', 'text-ivory', 'dark:text-espresso');
+            b.classList.add('bg-paper', 'dark:bg-darkcard', 'text-espresso', 'dark:text-ivory');
+          });
+
+          btn.classList.add('active', 'bg-maroon', 'dark:bg-gold', 'text-ivory', 'dark:text-espresso');
+          btn.classList.remove('bg-paper', 'dark:bg-darkcard', 'text-espresso', 'dark:text-ivory');
+        });
+      });
+
+      // Ultra-responsive native scroll initialization
+      window.addEventListener('DOMContentLoaded', () => {
+        preloadSequence();
+        resizeCanvas();
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+        updateCarousel();
+      });
+
+    })();
+  </script>
+
+</body>
+</html>

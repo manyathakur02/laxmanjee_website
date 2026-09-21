@@ -1,2 +1,2 @@
-# laxmanjee_website
-this is to be hosted on google
+# Interactive_website
+this is the interactive informational website for laxmanjee sirhind 
